@@ -1,0 +1,1 @@
+<?php  header('location: /crese/app_web/00_m_a_principal/index.php') ?>

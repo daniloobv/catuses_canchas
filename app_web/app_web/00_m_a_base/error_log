@@ -1,0 +1,127 @@
+[11-Feb-2022 02:50:11 UTC] PHP Warning:  include(index_contenido_1.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php on line 23
+[11-Feb-2022 02:50:11 UTC] PHP Warning:  include(index_contenido_1.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php on line 23
+[11-Feb-2022 02:50:11 UTC] PHP Warning:  include(): Failed opening 'index_contenido_1.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php on line 23
+[11-Feb-2022 02:50:11 UTC] PHP Warning:  include(index_contenido_1.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php on line 24
+[11-Feb-2022 02:50:11 UTC] PHP Warning:  include(index_contenido_1.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php on line 24
+[11-Feb-2022 02:50:11 UTC] PHP Warning:  include(): Failed opening 'index_contenido_1.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php on line 24
+[11-Feb-2022 02:50:11 UTC] PHP Warning:  include(index_contenido_1.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php on line 29
+[11-Feb-2022 02:50:11 UTC] PHP Warning:  include(index_contenido_1.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php on line 29
+[11-Feb-2022 02:50:11 UTC] PHP Warning:  include(): Failed opening 'index_contenido_1.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php on line 29
+[11-Feb-2022 02:50:11 UTC] PHP Warning:  include(index_contenido_1.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php on line 30
+[11-Feb-2022 02:50:11 UTC] PHP Warning:  include(index_contenido_1.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php on line 30
+[11-Feb-2022 02:50:11 UTC] PHP Warning:  include(): Failed opening 'index_contenido_1.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php on line 30
+[11-Feb-2022 10:36:32 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:36:32 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:36:32 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:36:32 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:37:19 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:37:19 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:37:19 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:37:19 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:39:51 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:39:51 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:39:51 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:39:51 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:40:58 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:40:58 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:40:58 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:40:58 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:42:47 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:42:47 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:42:47 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:42:47 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:45:42 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:45:42 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:45:42 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:45:42 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:46:19 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:46:19 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:46:19 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:46:19 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:48:18 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:48:18 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:48:18 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:48:18 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:48:29 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:48:29 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:48:29 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:48:29 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:48:52 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:48:52 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:48:52 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:48:52 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:49:12 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:49:12 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:49:12 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:49:12 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:49:40 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:49:40 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:49:41 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:49:41 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:50:23 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:50:23 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:50:23 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:50:23 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:51:04 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:51:04 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:51:04 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:51:04 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:52:12 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:52:12 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:52:12 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:52:12 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:52:32 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:52:32 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:52:32 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:52:32 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:52:44 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:52:44 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:52:44 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:52:44 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 10:53:50 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 10:53:50 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 10:53:50 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 10:53:50 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[11-Feb-2022 11:02:20 UTC] PHP Notice:  Undefined variable: btnRegresarVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 8
+[11-Feb-2022 11:02:20 UTC] PHP Notice:  Undefined variable: btnNuevoVisible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 19
+[11-Feb-2022 11:02:20 UTC] PHP Notice:  Undefined variable: btnOpcion1Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 31
+[11-Feb-2022 11:02:20 UTC] PHP Notice:  Undefined variable: btnOpcion2Visible in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/06_cinta_titulo_modulo.php on line 42
+[19-Feb-2022 09:34:08 UTC] PHP Warning:  include(conn.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 3
+[19-Feb-2022 09:34:08 UTC] PHP Warning:  include(conn.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 3
+[19-Feb-2022 09:34:08 UTC] PHP Warning:  include(): Failed opening 'conn.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 3
+[19-Feb-2022 09:34:08 UTC] PHP Notice:  Undefined index: admin in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 9
+[19-Feb-2022 09:34:08 UTC] PHP Notice:  Undefined variable: conn in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 10
+[19-Feb-2022 09:34:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php:10
+Stack trace:
+#0 /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php(1): include()
+#1 {main}
+  thrown in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 10
+[19-Feb-2022 09:34:11 UTC] PHP Warning:  include(conn.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 3
+[19-Feb-2022 09:34:11 UTC] PHP Warning:  include(conn.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 3
+[19-Feb-2022 09:34:11 UTC] PHP Warning:  include(): Failed opening 'conn.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 3
+[19-Feb-2022 09:34:11 UTC] PHP Notice:  Undefined index: admin in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 9
+[19-Feb-2022 09:34:11 UTC] PHP Notice:  Undefined variable: conn in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 10
+[19-Feb-2022 09:34:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php:10
+Stack trace:
+#0 /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php(1): include()
+#1 {main}
+  thrown in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 10
+[19-Feb-2022 09:34:13 UTC] PHP Warning:  include(conn.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 3
+[19-Feb-2022 09:34:13 UTC] PHP Warning:  include(conn.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 3
+[19-Feb-2022 09:34:13 UTC] PHP Warning:  include(): Failed opening 'conn.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 3
+[19-Feb-2022 09:34:13 UTC] PHP Notice:  Undefined index: admin in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 9
+[19-Feb-2022 09:34:13 UTC] PHP Notice:  Undefined variable: conn in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 10
+[19-Feb-2022 09:34:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php:10
+Stack trace:
+#0 /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_principal/index.php(1): include()
+#1 {main}
+  thrown in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/00_session.php on line 10
+[22-Feb-2022 08:29:22 UTC] PHP Notice:  Undefined variable: aplicacion_nombre in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/02_head.php on line 4
+[22-Feb-2022 08:29:22 UTC] PHP Notice:  Undefined variable: aplicacion_nombre in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/05_menu_lateral_izquierdo.php on line 4
+[22-Feb-2022 08:29:22 UTC] PHP Notice:  Undefined variable: aplicacion_usuario_logeado in /home/nfcv8lco9vme/public_html/crese/app_web/00_includes/05_menu_lateral_izquierdo.php on line 15
+[22-Feb-2022 09:03:35 UTC] PHP Warning:  include(../00_includes/06_footer.php.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_base/index.php on line 17
+[22-Feb-2022 09:03:35 UTC] PHP Warning:  include(../00_includes/06_footer.php.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_base/index.php on line 17
+[22-Feb-2022 09:03:35 UTC] PHP Warning:  include(): Failed opening '../00_includes/06_footer.php.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_base/index.php on line 17
+[22-Feb-2022 09:03:42 UTC] PHP Warning:  include(../00_includes/06_footer.php.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_base/index.php on line 17
+[22-Feb-2022 09:03:42 UTC] PHP Warning:  include(../00_includes/06_footer.php.php): failed to open stream: No such file or directory in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_base/index.php on line 17
+[22-Feb-2022 09:03:42 UTC] PHP Warning:  include(): Failed opening '../00_includes/06_footer.php.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/nfcv8lco9vme/public_html/crese/app_web/00_m_a_base/index.php on line 17

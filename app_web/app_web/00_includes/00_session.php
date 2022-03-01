@@ -26,9 +26,7 @@
      $fecha_y_hora_actual = date("Y-m-d H:i:s");
 
 
-     $aplicacion_nombre = "CRESE";
-     $aplicacion_modulo = "";
-     $aplicacion_usuario_logeado = "USUARIO DEMO";
+
 
 	
 ?>

@@ -12,10 +12,18 @@
 <!-- ChartJS -->
 <script src="../../plugins/chart.js/Chart.min.js"></script>
 
+<script src="../../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+
 <!-- jQuery Knob Chart -->
 <script src="../../plugins/jquery-knob/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
 <script src="../../plugins/moment/moment.min.js"></script>
+<script src="../../plugins/inputmask/jquery.inputmask.min.js"></script>
+
+<script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+
+<!-- Select2 -->
+<script src="../../plugins/select2/js/select2.full.min.js"></script>
 <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
@@ -328,6 +336,8 @@
       theme: 'bootstrap4'
     })
 
+
+
     //Datemask dd/mm/yyyy
     $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
     //Datemask2 mm/dd/yyyy
@@ -342,6 +352,15 @@
       });
 
     $('#reservationdate11').datetimepicker({
+        //format: 'L'
+        format: 'DD-MM-YYYY'
+      });
+
+
+
+
+
+    $('#reservationdate1').datetimepicker({
         //format: 'L'
         format: 'DD-MM-YYYY'
       });
@@ -369,6 +388,13 @@
     $('#reservationdatetime').datetimepicker({ icons: { time: 'far fa-clock' } });
 
     $('#reservationdatetime2').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+
+
+
+
+
+
 
     //Date range picker
     $('#reservation').daterangepicker()
@@ -399,7 +425,7 @@
     }
     )
 
-    //Timepicker
+   //Timepicker
     $('#timepicker').datetimepicker({
       format: 'LT'
     })

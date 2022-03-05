@@ -1,6 +1,6 @@
 <div class="card">
   <div class="card-header">
-    <h3 class="card-title">CLIENTES REGISTRADOS EN LA BD</h3>
+    <h3 class="card-title">DATOS BASICOS DE LAS CANCHAS </h3>
 
     <div class="card-tools">
       <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -18,7 +18,7 @@
   </div>
   <!-- /.card-body -->
   <div class="card-footer">
-    CANCHAS SISTEMA
+    CRESE SISTEMA
   </div>
   <!-- /.card-footer-->
 </div>

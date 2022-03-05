@@ -26,7 +26,7 @@
 
         <p>
           estimado cliente gracias por su paciencia.
-          por medio del sigueinte enlace: podra regresar a la<a href="../00_m_a_principal/index.php">  pagina principal</a>
+          por medio del sigueinte enlace: podra regresar a la<a href="../00_m_a_base/index.php">  pagina principal</a>
         </p>
 
 

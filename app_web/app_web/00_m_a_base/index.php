@@ -3,6 +3,7 @@
 <?php include '../00_includes/01_html_ini.php'; ?>
 <?php include '../00_includes/02_head.php'; ?>
 <?php include '../00_includes/03_body_ini.php'; ?>
+
 <div class="wrapper">
 
   <?php echo $preolader; ?>

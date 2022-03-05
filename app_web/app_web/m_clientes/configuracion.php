@@ -4,7 +4,7 @@
 }
 else{
   $_SESSION['error'] = 'Usuarios no cuenta con permisos!';
-  header('location:/crese/app_web/00_m_a_principal/index.php');
+  header('location:/canchas/acceder.php');
 }
 
 
@@ -22,7 +22,7 @@ $btnNuevoText = 'NUEVO CLIENTE';
 $btnOpcion1Text = 'OPCION1';
 $btnOpcion2Text = 'OPCION2';
 
-$urlRegresarText = '../00_m_a_principal/index.php';
+$urlRegresarText = '../00_m_a_base/index.php';
 $urlNuevoText = '#modal-add';
 $urlOpcion1Text = '#';
 $urlOpcion2Text = '#';

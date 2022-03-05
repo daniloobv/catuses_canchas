@@ -7,7 +7,7 @@
               <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-             <a href="../00_m_a_principal/index.php" class="nav-link"><i class="fas fa-home"> </i> <strong>INICIO</strong> </a>
+             <a href="../00_m_a_base/index.php" class="nav-link"><i class="fas fa-home"> </i> <strong>INICIO</strong> </a>
            </li>
            <li class="nav-item d-none d-sm-inline-block">
             <a href="#" class="nav-link"> <strong><?php  echo $aplicacion_modulo; ?></strong> </a>

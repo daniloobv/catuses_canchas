@@ -14,15 +14,38 @@
 
 
     <section class="content-header">
-  <div class="container-fluid">
-    <div class="row mb-2">
-      <div class="col-sm-12 col-12">
-        <!-- <h1>Collapsed Sidebar</h1> -->
-        <div class="btn-group" >
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-12 col-12">
+            <!-- <h1>Collapsed Sidebar</h1> -->
+            <div class="btn-group" >
 
-          <?php if( $btnRegresarVisible){ ?>
-           <button class="btn bg-maroon btn-sm" style="margin-right: 3px;margin-left: 3px;">
-            <i class="fa fa-chevron-left"></i> <a href=" <?php echo $urlRegresarText ?> "> <?php echo $btnRegresarText ?> </a>
+              <?php if( $btnRegresarVisible){ ?>
+               <button class="btn bg-maroon btn-sm" style="margin-right: 3px;margin-left: 3px;">
+                <i class="fa fa-chevron-left"></i> <a href=" <?php echo $urlRegresarText ?> "> <?php echo $btnRegresarText ?> </a>
+              </button>
+            <?php  }
+            else{ ?>
+
+            <?php } ?>
+
+
+
+            <?php if( $btnNuevoVisible){ ?>
+             <button class="btn bg-primary btn-sm" style="margin-right: 3px;margin-left: 3px;" data-toggle="modal" data-target="#modal-add"> <!-- onclick="alert('test');"> -->
+              <i class="fas fa-plus"></i>  <?php echo $btnNuevoText ?>
+            </button>
+          <?php  }
+          else{ ?>
+
+          <?php } ?>
+
+
+
+
+          <?php if( $btnOpcion1Visible){ ?>
+           <button class="btn bg-success btn-sm" style="margin-right: 3px;margin-left: 3px;">
+            <i class="fa fa-circle"></i> <a href=" <?php echo $urlOpcion1Text ?> "> <?php echo $btnOpcion1Text ?> </a>
           </button>
         <?php  }
         else{ ?>
@@ -31,9 +54,9 @@
 
 
 
-        <?php if( $btnNuevoVisible){ ?>
-         <button class="btn bg-primary btn-sm" style="margin-right: 3px;margin-left: 3px;" data-toggle="modal" data-target="#modal-add"> <!-- onclick="alert('test');"> -->
-          <i class="fas fa-plus"></i>  <?php echo $btnNuevoText ?>
+        <?php if( $btnOpcion2Visible){ ?>
+         <button class="btn bg-danger btn-sm" style="margin-right: 3px;margin-left: 3px;">
+          <i class="fas fa-square"></i> <a href=" <?php echo $urlOpcion2Text ?> "> <?php echo $btnOpcion2Text ?> </a>
         </button>
       <?php  }
       else{ ?>
@@ -43,32 +66,9 @@
 
 
 
-      <?php if( $btnOpcion1Visible){ ?>
-       <button class="btn bg-success btn-sm" style="margin-right: 3px;margin-left: 3px;">
-        <i class="fa fa-circle"></i> <a href=" <?php echo $urlOpcion1Text ?> "> <?php echo $btnOpcion1Text ?> </a>
-      </button>
-    <?php  }
-    else{ ?>
 
-    <?php } ?>
-
-
-
-    <?php if( $btnOpcion2Visible){ ?>
-     <button class="btn bg-danger btn-sm" style="margin-right: 3px;margin-left: 3px;">
-      <i class="fas fa-square"></i> <a href=" <?php echo $urlOpcion2Text ?> "> <?php echo $btnOpcion2Text ?> </a>
-    </button>
-  <?php  }
-  else{ ?>
-
-  <?php } ?>
-
-
-
-
-
-</div>
-</div>
+    </div>
+  </div>
 
 
 

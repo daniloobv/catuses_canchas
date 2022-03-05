@@ -14,17 +14,3 @@ if($ModoConexion == 1 ){
 	}
 }
 
-
-function OpenConnection()
-{
-   $serverName = "DESKTOP-FJ7CUSG\SQLEXPRESS";
-   $connectionOptions = array( "Database"=>"crese_app_web_pruebas", "CharacterSet" => "UTF-8", "UID"=>"sa", "PWD"=>"Hitman-47g");
-   //$connectionOptions = array( "Database"=>"crese_app_web_pruebas",  "UID"=>"sa", "PWD"=>"Hitman-47g");
-   $conn = sqlsrv_connect($serverName, $connectionOptions);
-   if($conn == false)
-       die(FormatErrors(sqlsrv_errors()));
-  return $conn;
-}
-
-
-

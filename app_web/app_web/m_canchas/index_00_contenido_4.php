@@ -1,6 +1,6 @@
 <div class="card">
   <div class="card-header">
-    <h3 class="card-title">CLIENTES REGISTRADOS EN LA BD</h3>
+    <h3 class="card-title">Title</h3>
 
     <div class="card-tools">
       <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -12,13 +12,11 @@
     </div>
   </div>
   <div class="card-body">
-
-<?php include 'index_00_contenido_1_tabla_1.php'; ?>
-
+    Start creating your amazing application!
   </div>
   <!-- /.card-body -->
   <div class="card-footer">
-    CANCHAS SISTEMA
+    Footer
   </div>
   <!-- /.card-footer-->
 </div>

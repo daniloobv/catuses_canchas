@@ -13,7 +13,7 @@ $btnNuevoText = 'NUEVO';
 $btnOpcion1Text = 'OPCION1';
 $btnOpcion2Text = 'OPCION2';
 
-$urlRegresarText = '../00_m_a_principal/index.php';
+$urlRegresarText = '../00_m_a_base/index.php';
 $urlNuevoText = '#modal-add';
 $urlOpcion1Text = '#';
 $urlOpcion2Text = '#';

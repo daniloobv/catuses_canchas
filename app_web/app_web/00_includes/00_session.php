@@ -3,7 +3,7 @@
 	include '00_conn.php';
 
 	if(!isset($_SESSION['admin']) || trim($_SESSION['admin']) == ''){
-		header('location: /crese/acceder.php');
+		header('location: /canchas/acceder.php');
 	}
 
 	$sql = "SELECT * FROM admin WHERE id = '".$_SESSION['admin']."'";
@@ -25,7 +25,9 @@
      date_default_timezone_set($timezone);
      $fecha_y_hora_actual = date("Y-m-d H:i:s");
 
-
+//$fecha_y_hora_actual = date("Y-m-d H:i:s");
+$fecha_actual = date("Y-m-d");
+$hora_actual = date("H:i:s");
 
 
 	

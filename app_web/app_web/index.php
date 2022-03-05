@@ -1,1 +1,1 @@
-<?php  header('location: /crese/app_web/00_m_a_principal/index.php') ?>
+<?php  header('location: /canchas/app_web/00_m_a_base/index.php') ?>

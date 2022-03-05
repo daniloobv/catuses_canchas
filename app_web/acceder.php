@@ -37,7 +37,8 @@
 <div class="login-box" style="margin-top:-210px;">
   <!-- <div class="login-box"> -->
   <div class="login-logo">
-    <a href="index2.html"><b><?php echo $var1 ?></b><?php echo $var2 ?></a>
+   <!--  <a href="index2.html"><b><?php //echo $var1 ?></b><?php //echo $var2 ?></a> -->
+    <a href="https://catuses.com/canchas"><b><?php echo "SISTEMA RESERVACIONES CANCHAS" ?></a>
   </div>
   <!-- /.login-logo -->
   <div class="card">

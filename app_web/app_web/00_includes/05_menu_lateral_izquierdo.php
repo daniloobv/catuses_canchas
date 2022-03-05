@@ -1,8 +1,9 @@
  <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
+
     <!-- Brand Logo -->
     <a href="../00_m_a_base/index.php" class="brand-link">
-      <img src="../../dist/img/AdminLTELogo.png" style="background-color: white;" alt="CRESE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="../../dist/img/soccer.png" style="background-color: white;" alt="CRESE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light"> <strong> <?php echo $aplicacion_nombre; ?> </strong> </span>
     </a>
 
@@ -55,29 +56,53 @@
               </li>
 
               <li class="nav-item">
-                <a href="../m_mensajes/index.php" class="nav-link">
+                <a href="../m_canchas/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>MENSAJES</p>
+                  <p>CANCHAS</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="../m_en_desarrollo/index.php" class="nav-link">
+                <a href="../m_reservaciones/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>AGENDAS</p>
+                  <p>RESERVAS (PROPUESTA)</p>
                 </a>
               </li>
             </ul>
           </li>
+
+
           <li class="nav-item">
-            <a href="../m_en_desarrollo/index.php" class="nav-link">
+            <a href="../m_clientes/index.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                MENU 2
-                <span class="right badge badge-danger">New</span>
+                CLIENTES
+               <span class="right badge badge-success">CRUD OK</span>
               </p>
             </a>
           </li>
+
+            <li class="nav-item">
+            <a href="../m_canchas/index.php" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                CANCHAS
+                <span class="right badge badge-success">CRUD OK</span>
+              </p>
+            </a>
+          </li>
+
+            <li class="nav-item">
+            <a href="../m_reservaciones/index.php" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                RESERVACIONES
+                <span class="right badge badge-success">CRUD OK</span>
+              </p>
+            </a>
+          </li>
+
+
 
         </ul>
       </nav>

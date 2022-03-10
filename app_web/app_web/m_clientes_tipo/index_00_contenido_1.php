@@ -1,6 +1,6 @@
 <div class="card">
   <div class="card-header">
-    <h3 class="card-title">CALENDARIO DE RESSERVACIONES</h3>
+    <h3 class="card-title">CLIENTES REGISTRADOS EN LA BD</h3>
 
     <div class="card-tools">
       <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -12,15 +12,13 @@
     </div>
   </div>
   <div class="card-body">
-    <!-- Start creating your amazing application! -->
-<h1>aqui el calendario</h1>
 
-
+<?php include 'index_00_contenido_1_tabla_1.php'; ?>
 
   </div>
   <!-- /.card-body -->
   <div class="card-footer">
-    Footer
+    CANCHAS SISTEMA
   </div>
   <!-- /.card-footer-->
 </div>

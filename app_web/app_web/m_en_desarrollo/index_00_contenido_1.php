@@ -16,7 +16,7 @@
   </div>
   <!-- /.card-body -->
   <div class="card-footer">
-    CRESE SISTEMA
+    CANCHAS SISTEMA
   </div>
   <!-- /.card-footer-->
 </div>

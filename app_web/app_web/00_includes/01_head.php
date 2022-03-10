@@ -13,7 +13,8 @@
   <!-- iCheck -->
   <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
 
-
+    <!-- fullCalendar -->
+  <link rel="stylesheet" href="../../plugins/fullcalendar/main.css">
 
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="../../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
@@ -38,6 +39,9 @@
   <link rel="stylesheet" href="../../plugins/dropzone/min/dropzone.min.css">
     <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+
+
+
 
 
 

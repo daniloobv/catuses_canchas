@@ -14,25 +14,25 @@
             <input type="hidden" class="empid" name="id">
             <input type="hidden"               name="tabla"  value="<?php echo $tabla; ?>">
             <input type="hidden"               name="modulo"  value="01index.php">
-            <label for="descripcion" class="col-sm-3 control-label">Descripcion:</label>
+            <label for="nombre" class="col-sm-3 control-label">Nombre:</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="descripcion" name="descripcion" required>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
             </div>
           </div>
 
 
           <div class="form-group">
-            <label for="detalles" class="col-sm-3 control-label">Detalles</label>
+            <label for="telefono" class="col-sm-3 control-label">Teléfono</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="detalles" name="detalles" required>
+              <input type="text" class="form-control" id="telefono" name="telefono" required>
             </div>
           </div>
 
 
           <div class="form-group">
-            <label for="precio" class="col-sm-3 control-label">Precio</label>
+            <label for="email" class="col-sm-3 control-label">Email</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="precio" name="precio" required>
+              <input type="text" class="form-control" id="email" name="email" required>
             </div>
           </div>
 

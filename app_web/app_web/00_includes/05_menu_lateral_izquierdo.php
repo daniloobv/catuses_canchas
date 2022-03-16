@@ -48,6 +48,8 @@
             </a>
             <ul class="nav nav-treeview">
 
+
+
               <li class="nav-item">
                 <a href="../m_clientes/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -71,6 +73,15 @@
             </ul>
           </li>
 
+          <li class="nav-item">
+            <a href="../m_clientes_tipo/index.php" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                TIPOS DE CLIENTES
+                <span class="right badge badge-success">CRUD OK</span>
+              </p>
+            </a>
+          </li>
 
           <li class="nav-item">
             <a href="../m_clientes/index.php" class="nav-link">
@@ -108,6 +119,36 @@
               <i class="nav-icon fas fa-th"></i>
               <p>
                 HORARIOS
+                <span class="right badge badge-success">CRUD OK</span>
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../m_configuraciones/index.php" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                CONFIGURACIONES
+                <span class="right badge badge-success">CRUD OK</span>
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../m_tarifas/index.php" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                PRECIOS
+                <span class="right badge badge-success">CRUD OK</span>
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../m_tarifas_descuentos/index.php" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                DESCUENTOS
                 <span class="right badge badge-success">CRUD OK</span>
               </p>
             </a>

@@ -18,25 +18,13 @@
   <?php include '../00_includes/06_cinta_titulo_modulo.php'; ?>
   <!-- Main content -->
   <section class="content">
-
-
-
-
     <div class="container-fluid">
       <!-- Main row -->
       <div class="row">
-
-
-
       <!-- Left col -->
       <section class="col-lg-12 connectedSortable">
-
-
- <div id="calendar"></div>
-
-        <?php //include 'index_00_contenido_2.php';   ?>
-        <?php //include 'index_00_contenido_1.php'; ?>
-
+        <?php include 'index_00_contenido_1.php'; ?>
+        <?php //include 'index_00_contenido_2.php'; ?>
       </section>
       </div>
     </div>

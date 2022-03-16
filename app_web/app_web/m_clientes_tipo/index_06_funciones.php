@@ -84,21 +84,10 @@
       dataType: 'json',
       success: function(response){
         $('.empid').val(response.empid);
-        $('.employee_id').html(response.nombreempleado);
-        $('.del_employee_name').html(response.nombre);
-        $('#edit_nombre').val(response.nombre);
-        $('#edit_rtn_dni').val(response.rtn_dni);
-        $('#edit_cliente_tipo_id').val(response.cliente_tipo_id);
-        $('#edit_telefono').val(response.telefono);
-        $('#edit_direccion').val(response.direccion);
-        $('#edit_email').val(response.correo);
+        $('.employee_id').html(response.empid);
+        $('.del_employee_name').html(response.descripcion);
+        $('#edit_descripcion').val(response.descripcion);
 
-        $('#edit_nombre2').val(response.nombre);
-        $('#edit_rtn_dni2').val(response.rtn_dni);
-        $('#edit_cliente_tipo_id2').val(response.cliente_tipo_id);
-        $('#edit_telefono2').val(response.telefono);
-        $('#edit_direccion2').val(response.direccion);
-        $('#edit_email2').val(response.correo);
       }
     });
   }

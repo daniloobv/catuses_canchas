@@ -14,7 +14,7 @@
                         <td><?php echo $row[$dato0]; ?></td>
                         <td><?php echo $row[$dato1]; ?></td>
                         <td><?php echo $row[$dato2]; ?></td>
-                        <td><?php echo $row[$dato3]; ?></td>
+                        <td><?php echo number_format($row[$dato3],2); ?></td>
                         
                         <td>
 

@@ -4,11 +4,16 @@
 	if(isset($_POST['edit'])){
 		$empid = $_POST['id']; 		$tabla = $_POST['tabla'];			$modulo = "index.php";
 
-		$descripcion = $_POST['descripcion'];
+		$nombre = $_POST['nombre'];
+		$rtn_dni = $_POST['rtn_dni'];
+
+        $telefono = $_POST['telefono'];
+		$direccion = $_POST['direccion'];
+		$email = $_POST['email'];
 
 
-
-		$sql = "UPDATE ".$tabla." SET descripcion = '$descripcion'
+		$sql = "UPDATE ".$tabla." SET nombre = '$nombre', cedula = '$rtn_dni',
+        telefono = '$telefono', direccion = '$direccion', correo = '$email'
 		WHERE id = '$empid'";
 
 		if($conn->query($sql)){

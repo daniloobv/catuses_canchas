@@ -16,25 +16,25 @@
           <input type="hidden"               name="modulo"  value="01index.php">
 
           <div class="form-group">
-            <label for="edit_descripcion" class="col-sm-3 control-label">Descripcion:</label>
+            <label for="edit_nombre" class="col-sm-3 control-label">Nombre:</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="edit_descripcion" name="descripcion" required>
+              <input type="text" class="form-control" id="edit_nombre" name="nombre" required>
             </div>
           </div>
 
 
           <div class="form-group">
-            <label for="edit_detalles" class="col-sm-3 control-label">Detalles</label>
+            <label for="edit_telefono" class="col-sm-3 control-label">Teléfono</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="edit_detalles" name="detalles" required>
+              <input type="text" class="form-control" id="edit_telefono" name="telefono" required>
             </div>
           </div>
 
 
           <div class="form-group">
-            <label for="edit_precio" class="col-sm-3 control-label">Precio</label>
+            <label for="edit_email" class="col-sm-3 control-label">Email</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="edit_precio" name="precio" required>
+              <input type="text" class="form-control" id="edit_email" name="email" required>
             </div>
           </div>
         </div>

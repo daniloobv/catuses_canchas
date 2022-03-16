@@ -37,16 +37,12 @@ $campo0 = "Id";
 $campo1 = "Nombre";
 $campo2 = "Correo";
 $campo3 = "Telefono";
-$campo3 = "RUT";
-$campo4 = "Tipo Cliente";
 
 //nombre de campos de la tabla
 $dato0 = "idr";
 $dato1 = "nombre";
 $dato2 = "correo";
 $dato3 = "telefono";
-$dato3 = "cedula";
-$dato4 = "cliente_categoria_id";
 
 
 

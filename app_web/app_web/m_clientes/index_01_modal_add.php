@@ -10,10 +10,12 @@
         </div>
 
         <div class="card-body">
-          <div class="form-group">
-            <input type="hidden" class="empid" name="id">
-            <input type="hidden"               name="tabla"  value="<?php echo $tabla; ?>">
-            <input type="hidden"               name="modulo"  value="01index.php">
+
+          <input type="hidden" class="empid" name="id">
+          <input type="hidden"               name="tabla"  value="<?php echo $tabla; ?>">
+          <input type="hidden"               name="modulo"  value="01index.php">
+
+          <div class="form-group row">
             <label for="nombre" class="col-sm-3 control-label">Nombre:</label>
             <div class="col-sm-9">
               <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -21,7 +23,7 @@
           </div>
 
 
-          <div class="form-group">
+          <div class="form-group row">
             <label for="telefono" class="col-sm-3 control-label">Teléfono</label>
             <div class="col-sm-9">
               <input type="text" class="form-control" id="telefono" name="telefono" required>
@@ -29,12 +31,39 @@
           </div>
 
 
-          <div class="form-group">
+          <div class="form-group row">
             <label for="email" class="col-sm-3 control-label">Email</label>
             <div class="col-sm-9">
               <input type="text" class="form-control" id="email" name="email" required>
             </div>
           </div>
+
+          <div class="form-group row">
+            <label for="rut" class="col-sm-3 control-label">RUT:</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="rut" name="rut" required>
+            </div>
+          </div>
+
+            <div class="form-group row">
+                <label for="cliente_categoria_id" class="col-sm-3 control-label">Tipo Cliente:</label>
+                <div class="col-sm-9">
+                    <select class="form-control select2" name="cliente_categoria_id" id="cliente_categoria_id" required>
+                        <option value="" selected>- Seleccionar -</option>
+                        <?php
+                        $sql = "SELECT * FROM cliente_tipo";
+                        $query = $conn->query($sql);
+                        while ($prow = $query->fetch_assoc()) {
+                            echo "
+                            <option value='" . $prow['id'] . "'>" . $prow['descripcion'] . "</option>
+                            ";
+                        }
+                        ?>
+                    </select>
+                </div>
+            </div>
+
+
 
         </div>
 

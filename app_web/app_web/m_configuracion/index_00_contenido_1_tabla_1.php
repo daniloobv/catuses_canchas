@@ -5,7 +5,6 @@
                       <th><?php echo $campo1; ?></th>
                       <th><?php echo $campo2; ?></th>
                       <th><?php echo $campo3; ?></th>
-                       <th><?php echo $campo4; ?></th>
                       <th>Acciones</th>
                     </tr>
                   </thead>
@@ -16,7 +15,6 @@
                         <td><?php echo $row[$dato1]; ?></td>
                         <td><?php echo $row[$dato2]; ?></td>
                         <td><?php echo $row[$dato3]; ?></td>
-                         <td><?php echo $row[$dato4]; ?></td>
                         
                         <td>
 

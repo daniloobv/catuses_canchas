@@ -9,8 +9,8 @@ else{
 
 
 
-$aplicacion_modulo = "CLIENTES";
-$titulo_modulo = "CLIENTES";
+$aplicacion_modulo = "TIPOS DE CLIENTES";
+$titulo_modulo = "TIPOS DE CLIENTES";
 
 $btnRegresarVisible = false;
 $btnNuevoVisible = true;
@@ -18,7 +18,7 @@ $btnOpcion1Visible = false;
 $btnOpcion2Visible = false;
 
 $btnRegresarText = 'REGRESAR';
-$btnNuevoText = 'NUEVO CLIENTE';
+$btnNuevoText = 'NUEVO TIPO DE CLIENTE';
 $btnOpcion1Text = 'OPCION1';
 $btnOpcion2Text = 'OPCION2';
 
@@ -32,17 +32,16 @@ $urlOpcion2Text = '#';
 $modo_modulo = 0;//0=modo desarrollo, 1=modo listo para usar
 
 //titulos de la tabla
-$tabla = "client";
+$tabla = "cliente_tipo";
 $campo0 = "Id";
-$campo1 = "Nombre";
-$campo2 = "Correo";
-$campo3 = "Telefono";
+$campo1 = "Descripcion";
+
+
 
 //nombre de campos de la tabla
 $dato0 = "idr";
-$dato1 = "nombre";
-$dato2 = "correo";
-$dato3 = "telefono";
+$dato1 = "descripcion";
+
 
 
 

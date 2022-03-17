@@ -1,7 +1,7 @@
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                     <tr>
-                      <th>Foto</th>
+                      <th>Foto_</th>
                       <th><?php echo $campo1; ?></th>
                       <th><?php echo $campo3; ?></th>
                       <th><?php echo $campo4; ?></th>
@@ -14,7 +14,18 @@
                     <?php  while($row = $query->fetch_assoc()){  ?>
                      <tr>
 
-                      <td><img src="<?php echo (!empty($row['photo'])) ? '../../images/' . $row['photo'] : '../../images/profile.jpg'; ?>" width="64px" height="64px"> <a href="#modal-edit-picture" data-toggle="modal" class="pull-right photo" data-id="<?php echo $row['empid']; ?>"><span class="fa fa-edit"></span></a></td>
+                      <td><img src="<?php echo (!empty($row['photo'])) ? '../../images/' . $row['photo'] : '../../images/profile.jpg'; ?>" width="64px" height="64px">
+
+                                          <a href="#edit_photo" data-toggle="modal" class="pull-right photo" data-id="<?php echo $row['userid']; ?>">
+
+                        <span class="fa fa-edit">
+
+                        </span>
+
+                    </a>
+
+
+                      </td>
 
 
                       <td><?php echo $row['username']; ?></td>

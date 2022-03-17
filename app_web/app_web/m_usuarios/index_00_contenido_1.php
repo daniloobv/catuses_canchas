@@ -18,7 +18,7 @@
   </div>
   <!-- /.card-body -->
   <div class="card-footer">
-    <h3 class="card-title"><?php echo $aplicacion_modulo.' '; ?> REGISTRADOS EN LA BD</h3>
+    <h3 class="card-title"><?php echo $aplicacion_modulo.' '; ?> REGISTRADOS EN LA BD_</h3>
   </div>
   <!-- /.card-footer-->
 </div>

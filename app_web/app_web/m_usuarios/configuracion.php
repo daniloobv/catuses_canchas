@@ -18,7 +18,7 @@ $btnOpcion1Visible = false;
 $btnOpcion2Visible = false;
 
 $btnRegresarText = 'REGRESAR';
-$btnNuevoText = 'NUEVO USUARIO';
+$btnNuevoText = 'NUEVO USUARIO_';
 $btnOpcion1Text = 'OPCION1';
 $btnOpcion2Text = 'OPCION2';
 

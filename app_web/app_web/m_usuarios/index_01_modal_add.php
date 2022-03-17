@@ -5,7 +5,7 @@
       <form class="form-horizontal" action="index_01_modal_add_insert.php" method="POST" enctype="multipart/form-data">
 
         <div class="modal-header">
-          <h4 class="modal-title">Nuevo <?php echo $titulo_modulo; ?></h4>
+          <h4 class="modal-title">Nuevo_ <?php echo $titulo_modulo; ?></h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -58,18 +58,18 @@
     </div>
 
     <div class="form-group row">
-        <label for="first_name" class="col-sm-3 control-label">Nombres: </label>
+        <label for="firstname" class="col-sm-3 control-label">Nombres: </label>
 
         <div class="col-sm-9">
-            <input type="text" class="form-control" id="first_name" name="first_name" required>
+            <input type="text" class="form-control" id="firstname" name="firstname" required>
         </div>
     </div>
 
     <div class="form-group row">
-        <label for="last_name" class="col-sm-3 control-label">Apellidos: </label>
+        <label for="lastname" class="col-sm-3 control-label">Apellidos: </label>
 
         <div class="col-sm-9">
-            <input type="text" class="form-control" id="last_name" name="last_name" required>
+            <input type="text" class="form-control" id="lastname" name="lastname" required>
         </div>
     </div>
 

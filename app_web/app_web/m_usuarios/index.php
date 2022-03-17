@@ -35,11 +35,13 @@
 
   <?php include '../00_includes/06_footer.php'; ?>
 
+  <?php include 'index_04_modal_photo_edit.php'; ?>
+
   <?php //include 'index_05_modal_send.php'; ?>
   <?php include 'index_01_modal_add.php'; ?>
   <?php include 'index_03_modal_edit.php'; ?>
   <?php include 'index_05_modal_delete.php'; ?>
-  <?php include 'index_04_modal_photo_edit.php'; ?>
+
 
   <?php include 'index_05_modal_edit_pass.php'; ?>
 </div>

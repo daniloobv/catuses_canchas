@@ -1,4 +1,4 @@
-<div class="modal fade" id="modal-edit-picture">
+<div class="modal fade" id="edit_photo">
   <div class="modal-dialog">
     <div class="modal-content">
 

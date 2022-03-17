@@ -43,6 +43,15 @@
   }
 
 
+  function funcionZ(valor){
+    //alert(valor);
+    $('#edit_photo').modal('show');
+    var id = valor;
+    getRow(id);
+
+  }
+
+
   $(function(){
     $('.edit').click(function(e){
       e.preventDefault();
@@ -75,11 +84,11 @@
       getRow(id);
     });
 
-    $('.photo').click(function(e){
-      e.preventDefault();
-      var id = $(this).data('id');
-      getRow(id);
-    });
+      $('.photo').click(function(e) {
+        e.preventDefault();
+        var id = $(this).data('id');
+        getRow(id);
+      });
 
   });
 

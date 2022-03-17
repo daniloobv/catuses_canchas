@@ -6,9 +6,11 @@
 
 	if(isset($_POST['add'])){
 		$tabla = $_POST['tabla'];
-		$dato01 = $_POST['mensaje'];
 
-		$sql = "INSERT INTO ".$tabla."(mensaje,tipo_mensaje_id) VALUES ('$dato01','2')";
+		$dato01 = $_POST['time_ini'];
+		$dato02 = $_POST['time_fin'];
+
+		$sql = "INSERT INTO ".$tabla."(hora_inicio,hora_final,estado_registro) VALUES ('$dato01','$dato02','1')";
 
 		if($conn->query($sql)){ $_SESSION['success'] = ' añadido satisfactoriamente';	}
 		else{

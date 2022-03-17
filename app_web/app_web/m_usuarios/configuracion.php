@@ -1,41 +1,67 @@
 <?php
-include '../00_includes/00_session.php';
-if($user['rol_id'] == 1 || $user['rol_id'] == 2){
-//$_SESSION['success'] = 'Usuarios con permisos!';
+
+  if($user['rol_id'] == 1 || $user['rol_id'] == 2 || $user['rol_id'] == 3){
 }
 else{
   $_SESSION['error'] = 'Usuarios no cuenta con permisos!';
-  header('location: ../index.php');
+  header('location:/canchas/acceder.php');
 }
 
-$modulo="usuarios";
-$nombreModulo="Usuarios";
-$nombreModulo_Plural="Usuario";
-$nombreModulo_Singular="usuarios";
-$tabla = "admin";
-$genero = "f";
-
-$modulo_add = "index_04_modal_add_f.php";
-$modulo_edit = "index_05_modal_edit_f.php";
-$modulo_delete = "index_06_modal_delete_f.php";
 
 
-$btnNuevo_visible = true;
-$btnRegresar_visible = false;
+$aplicacion_modulo = "USUARIOS";
+$titulo_modulo = "USUARIOS";
 
-$btn_url_personalizado = false;
+$btnRegresarVisible = false;
+$btnNuevoVisible = true;
+$btnOpcion1Visible = false;
+$btnOpcion2Visible = false;
 
-$url_personalizado_btn = $modulo_add;
+$btnRegresarText = 'REGRESAR';
+$btnNuevoText = 'NUEVO USUARIO';
+$btnOpcion1Text = 'OPCION1';
+$btnOpcion2Text = 'OPCION2';
+
+$urlRegresarText = '../00_m_a_base/index.php';
+$urlNuevoText = '#modal-add';
+$urlOpcion1Text = '#';
+$urlOpcion2Text = '#';
 
 
-$modo_compacto_del_menu_lateral_izquierdo=false;
 
-$fijarSidebar = "";
+$modo_modulo = 0;//0=modo desarrollo, 1=modo listo para usar
 
-if ($modo_compacto_del_menu_lateral_izquierdo) {
-  $fijarSidebar = "sidebar-collapse";
-}
+//titulos de la tabla
+$tabla="admin";
+
+$campo0 = "id";
+$campo1 = "Nombre de usuario";
+$campo3 = "Rol";
+$campo4 = "Nombre";
+$campo5 = "Cargo";
+$campo6 = "Horario";
+
+
+$campo8 = "usuario_tipo_id";
+
+//nombre de campos de la tabla
+$dato0 = "id";
+$dato1 = "id";
+$dato2 = "id";
+$dato3 = "id";
+$dato4 = "id";
+
+$dato6 = "id";
+
+
+
+//toda la data a mostrar en la tabla de registros previamente guardados
+$sql = "SELECT *, ".$tabla.".id as empid  FROM ".$tabla;
+
+
+$query = $conn->query($sql);
+
+
 
 
 ?>
-

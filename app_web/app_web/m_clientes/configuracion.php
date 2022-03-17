@@ -51,7 +51,7 @@ $dato4 = "cliente_categoria_id";
 
 
 //toda la data a mostrar en la tabla de registros previamente guardados
-$sql = "SELECT *, ".$tabla.".id as idr FROM ".$tabla ;
+$sql = "SELECT *, ".$tabla.".id as idr, cliente_tipo.descripcion as descripcion_tipo_cliente FROM ".$tabla." left join cliente_tipo on cliente_tipo.id = ".$tabla.".cliente_categoria_id" ;
 $query = $conn->query($sql);
 
 

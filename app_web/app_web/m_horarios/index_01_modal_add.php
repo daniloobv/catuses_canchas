@@ -17,35 +17,39 @@
 
 
 
-
-
-
-
-
           <div class="bootstrap-timepicker">
-            <div  class="form-group row">
-              <label class="col-sm-3 control-label" for="time_ini">Hora Inicio:</label>
-              <div class="col-sm-9 input-group date" id="timepicker11" data-target-input="nearest">
-               <div class="input-group-append" data-target="#timepicker11" data-toggle="datetimepicker">
+            <div class="form-group row">
+              <label for="time_in">Hora Inicio:</label>
+              <div class="input-group date" id="edit_timepicker11" data-target-input="nearest">
+               <div class="input-group-append" data-target="#edit_timepicker11" data-toggle="datetimepicker">
                 <div class="input-group-text"><i class="far fa-clock"></i></div>
               </div>
-              <input type="text" id="time_ini" value="<?php echo $hora_actual ?>" name="time_ini" data-toggle="datetimepicker" class="form-control datetimepicker-input" data-target="#timepicker11"/>
+              <input type="text" id="time_in" value="<?php echo $hora_actual ?>" name="time_ini" data-toggle="datetimepicker" class="form-control datetimepicker-input" data-target="#edit_timepicker11"/>
             </div>
+            <!-- /.input group -->
           </div>
+          <!-- /.form group -->
         </div>
 
 
-      <div class="bootstrap-timepicker">
-          <div  class="form-group row">
-            <label class="col-sm-3 control-label" for="time_fin">Hora Final:</label>
-            <div class="col-sm-9 input-group date" id="timepicker2" data-target-input="nearest">
-             <div class="input-group-append" data-target="#timepicker2" data-toggle="datetimepicker">
+        <div class="bootstrap-timepicker">
+          <div class="form-group row">
+            <label for="time_fi">Hora Final:</label>
+            <div class="input-group date" id="edit_timepicker12" data-target-input="nearest">
+             <div class="input-group-append" data-target="#edit_timepicker12" data-toggle="datetimepicker">
               <div class="input-group-text"><i class="far fa-clock"></i></div>
             </div>
-            <input type="text" id="time_fin" value="<?php echo $hora_actual ?>" name="time_fin" data-toggle="datetimepicker" class="form-control datetimepicker-input" data-target="#timepicker2"/>
+            <input type="text" id="time_fi" value="<?php echo $hora_actual ?>" name="time_fin" data-toggle="datetimepicker" class="form-control datetimepicker-input" data-target="#edit_timepicker12"/>
           </div>
+          <!-- /.input group -->
         </div>
+        <!-- /.form group -->
       </div>
+
+
+
+
+
 
 
 

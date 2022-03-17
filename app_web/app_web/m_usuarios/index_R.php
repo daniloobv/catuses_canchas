@@ -2,7 +2,7 @@
 <?php include 'configuracion.php'; ?>
 <?php include '../00_includes/01_html_ini.php'; ?>
 <?php include '../00_includes/02_head.php'; ?>
-<?php include '../00_includes/03_body_ini.php'; ?>
+<?php include '../00_includes/03_body_ini.php'; ?>Z
 <?php include '../00_includes/04_menu_superior.php'; ?>
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -40,13 +40,17 @@
   <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-<?php include '../00_includes/06_footer.php'; ?>
-<?php include 'index_06_funciones.php'; ?>
 
-<?php include 'index_01_modal_add.php'; ?>
+<?php include '../00_includes/06_footer.php'; ?>
+
 <?php include 'index_03_modal_edit.php'; ?>
+<?php include 'index_05_modal_send.php'; ?>
+<?php include 'index_01_modal_add.php'; ?>
 <?php include 'index_04_modal_photo_edit.php'; ?>
 <?php include 'index_05_modal_delete.php'; ?>
+
+
+
 <!-- Control Sidebar -->
 <aside class="control-sidebar control-sidebar-dark">
   <!-- Control sidebar content goes here -->
@@ -55,4 +59,5 @@
 </div>
 <!-- ./wrapper -->
 <?php include '../00_includes/06_script.php'; ?>
+<?php include 'index_06_funciones.php'; ?>
 <?php include '../00_includes/07_body_html_fin.php'; ?>

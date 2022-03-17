@@ -32,16 +32,16 @@
 
 
           <div class="form-group row">
-            <label for="email" class="col-sm-3 control-label">Email</label>
+            <label for="correo" class="col-sm-3 control-label">Email</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="email" name="email" required>
+              <input type="text" class="form-control" id="correo" name="correo" required>
             </div>
           </div>
 
           <div class="form-group row">
-            <label for="rut" class="col-sm-3 control-label">RUT:</label>
+            <label for="cedula" class="col-sm-3 control-label">RUT:</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="rut" name="rut" required>
+              <input type="text" class="form-control" id="cedula" name="cedula" required>
             </div>
           </div>
 

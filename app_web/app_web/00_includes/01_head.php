@@ -11,7 +11,7 @@
     <!-- fullCalendar -->
   <link rel="stylesheet" href="../../plugins/fullcalendar/main.css">
 
-
+ <script src="https://kit.fontawesome.com/ef98abb6c7.js" crossorigin="anonymous"></script>
   <!-- Tempusdominus Bootstrap 4 -->
   <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
   <!-- iCheck -->

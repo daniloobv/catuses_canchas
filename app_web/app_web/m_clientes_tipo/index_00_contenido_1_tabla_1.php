@@ -3,7 +3,7 @@
                     <tr>
                       <th><?php echo $campo0; ?></th>
                       <th><?php echo $campo1; ?></th>
-
+                      <th>% DESCUENTO!!!</th>
                       <th>Acciones</th>
                     </tr>
                   </thead>
@@ -12,8 +12,7 @@
                       <tr>
                         <td><?php echo $row[$dato0]; ?></td>
                         <td><?php echo $row[$dato1]; ?></td>
-
-                        
+                        <td><?php echo number_format($row[$dato2],0).' %'; ?></td>
                         <td>
 
                           <div  class="btn-group">

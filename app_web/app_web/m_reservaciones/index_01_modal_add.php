@@ -9,20 +9,25 @@
           </button>
         </div>
 
+        <input type="hidden" class="empid" name="id">
+        <input type="hidden"               name="tabla"  value="<?php echo $tabla; ?>">
+        <input type="hidden"               name="modulo"  value="01index.php">
+
+
         <div class="card-body">
+
+
           <div class="form-group row">
-            <input type="hidden" class="empid" name="id">
-            <input type="hidden"               name="tabla"  value="<?php echo $tabla; ?>">
-            <input type="hidden"               name="modulo"  value="01index.php">
+
             <label for="cliente_id" class="col-sm-3 control-label">Cliente:</label>
             <div class="col-sm-9">
-              <select class="form-control select2" name="cliente_id" id="cliente_id" required>
+              <select class="form-control select2" id="cliente_id" name="cliente_id"  required>
                 <option value="" selected>- Seleccionar -</option>
                 <?php
                 $sqla = "SELECT * FROM client ";
                 $querya = $conn->query($sqla);
                 while ($prow = $querya->fetch_assoc()) {
-                  echo "<option value='".$prow['id']."'>". $prow['nombre'] . "</option> ";
+                  echo "<option value='".$prow['id']."'>".$prow['cedula'].' .......... '.$prow['nombre'] ."</option> ";
                 }
                 ?>
               </select>
@@ -60,7 +65,7 @@
 
 
 
-          <br>
+        <!--   <br>
           <h4>propuesta 1</h4>
           <br>
 
@@ -71,7 +76,7 @@
                <div class="input-group-append" data-target="#timepicker11" data-toggle="datetimepicker">
                 <div class="input-group-text"><i class="far fa-clock"></i></div>
               </div>
-              <input type="text" id="time_in" value="<?php echo $hora_actual ?>" name="time_in" data-toggle="datetimepicker" class="form-control datetimepicker-input" data-target="#timepicker11"/>
+              <input type="text" id="time_in" value="<?php //echo $hora_actual ?>" name="time_in" data-toggle="datetimepicker" class="form-control datetimepicker-input" data-target="#timepicker11"/>
             </div>
           </div>
         </div>
@@ -84,16 +89,16 @@
              <div class="input-group-append" data-target="#timepicker2" data-toggle="datetimepicker">
               <div class="input-group-text"><i class="far fa-clock"></i></div>
             </div>
-            <input type="text" id="time_in" value="<?php echo $hora_actual ?>" name="time_in" data-toggle="datetimepicker" class="form-control datetimepicker-input" data-target="#timepicker2"/>
+            <input type="text" id="time_in" value="<?php //echo $hora_actual ?>" name="time_in" data-toggle="datetimepicker" class="form-control datetimepicker-input" data-target="#timepicker2"/>
           </div>
         </div>
       </div>
 
 
       <br>
-      <br>
-      <h4>propuesta 2</h4>
-<br>
+      <br> -->
+   <!--    <h4>propuesta 2</h4>
+      <br> -->
 
       <div class="form-group row">
         <label for="horario_id" class="col-sm-3 control-label">Horario</label>

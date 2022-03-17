@@ -9,8 +9,8 @@ else{
 
 
 
-$aplicacion_modulo = "MENSAJES";
-$titulo_modulo = "MENSAJES";
+$aplicacion_modulo = "HORARIOS";
+$titulo_modulo = "HORARIOS";
 
 $btnRegresarVisible = false;
 $btnNuevoVisible = true;
@@ -18,7 +18,7 @@ $btnOpcion1Visible = false;
 $btnOpcion2Visible = false;
 
 $btnRegresarText = 'REGRESAR';
-$btnNuevoText = 'NUEVO MENSAJE';
+$btnNuevoText = 'NUEVO HORARIO';
 $btnOpcion1Text = 'OPCION1';
 $btnOpcion2Text = 'OPCION2';
 
@@ -32,22 +32,22 @@ $urlOpcion2Text = '#';
 $modo_modulo = 0;//0=modo desarrollo, 1=modo listo para usar
 
 //titulos de la tabla
-$tabla="mensajes";
+$tabla="horarios";
 $campo0 = "Id";
-$campo1 = "Tipo Mensaje";
-$campo2 = "Mensaje";
+$campo1 = "Hora Inicio";
+$campo2 = "Hora Final";
 //$campo3 = "fecha crea";
 
 //nombre de campos de la tabla
 $dato0 = "idr";
-$dato1 = "descripcion";
-$dato2 = "mensaje";
+$dato1 = "hora_inicio";
+$dato2 = "hora_final";
 //$dato3 = "fecha_crea";
 
 
 
 //toda la data a mostrar en la tabla de registros previamente guardados
-$sql = "SELECT *, ".$tabla.".id as idr FROM ".$tabla. " left join mensaje_tipo on mensaje_tipo.id = ".$tabla.".tipo_mensaje_id" ;
+$sql = "SELECT *, ".$tabla.".id as idr FROM ".$tabla ;
 $query = $conn->query($sql);
 
 

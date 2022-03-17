@@ -16,7 +16,7 @@
                         <td><?php echo $row[$dato1]; ?></td>
                         <td><?php echo $row[$dato2]; ?></td>
                         <td><?php echo $row[$dato3]; ?></td>
-                         <td><?php echo $row[$dato4]; ?></td>
+                         <td><?php echo $row['descripcion_tipo_cliente']; ?></td>
                         
                         <td>
 

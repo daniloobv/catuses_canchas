@@ -6,9 +6,11 @@ if(isset($_POST['edit'])){
 		$modulo = "index.php";
 		$id = $_POST['id'];
 		$tabla = $_POST['tabla'];
-		$mensaje = $_POST['mensaje'];
 
-		$sql = "UPDATE ".$tabla." SET mensaje = '$mensaje' WHERE id = '$id'";
+		$hora_inicio = $_POST['time_ini'];
+		$hora_final = $_POST['time_fin'];
+
+		$sql = "UPDATE ".$tabla." SET hora_inicio = '$hora_inicio',hora_final = '$hora_final' WHERE id = '$id'";
 
 		if($conn->query($sql)){
 			$_SESSION['success'] = 'actualizado con éxito ';//.$sql;

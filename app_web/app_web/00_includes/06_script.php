@@ -59,7 +59,7 @@
       $(".alert").fadeTo(1000, 0).slideUp(1000, function(){
         $(this).remove();
       });
-    }, 3000);
+    }, 563000);
 
   });
 
@@ -390,6 +390,22 @@
       format: 'LT'
     })
 
+     $('#timepicker12').datetimepicker({
+      format: 'LT'
+    })
+
+
+     $('#edit_timepicker11').datetimepicker({
+      //sformat: 'LT'
+      format: 'HH:mm'
+    })
+
+     $('#edit_timepicker12').datetimepicker({
+      format: 'LT'
+    })
+
+
+
      $('#timepicker2').datetimepicker({
       format: 'LT'
     })
@@ -431,12 +447,12 @@
 
 
     /* initialize the calendar
-     -----------------------------------------------------------------*/
+    -----------------------------------------------------------------*/
     //Date for the calendar events (dummy data)
     var date = new Date()
     var d    = date.getDate(),
-        m    = date.getMonth(),
-        y    = date.getFullYear()
+    m    = date.getMonth(),
+    y    = date.getFullYear()
 
     var Calendar = FullCalendar.Calendar;
     var Draggable = FullCalendar.Draggable;
@@ -459,9 +475,9 @@
       themeSystem: 'bootstrap',
       //Random default events
       events: [
-        {
-          title          : 'All Day Event',
-          start          : new Date(y, m, 1),
+      {
+        title          : 'All Day Event',
+        start          : new Date(y, m, 1),
           backgroundColor: '#f56954', //red
           borderColor    : '#f56954', //red
           allDay         : true
@@ -504,8 +520,8 @@
           backgroundColor: '#3c8dbc', //Primary (light-blue)
           borderColor    : '#3c8dbc' //Primary (light-blue)
         }
-      ],
-      editable  : true,
+        ],
+        editable  : true,
       droppable : true, // this allows things to be dropped onto the calendar !!!
       drop      : function(info) {
         // is the "remove after drop" checkbox checked?

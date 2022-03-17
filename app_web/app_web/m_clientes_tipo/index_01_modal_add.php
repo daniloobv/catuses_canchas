@@ -22,6 +22,14 @@
           </div>
 
 
+          <div class="form-group row">
+            <label for="t_descuento" class="col-sm-3 control-label">DESCUENTO %:</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="t_descuento" value="0.00" name="t_descuento" required>
+            </div>
+          </div>
+
+
 
 
         </div>

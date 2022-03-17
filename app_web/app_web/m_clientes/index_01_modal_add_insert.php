@@ -4,23 +4,46 @@
 	include 'configuracion.php';
 	$modulo = "index.php";
 
-	if(isset($_POST['add'])){
-		$tabla = $_POST['tabla'];
+if(isset($_POST['add'])){
+	$firstname = $_POST['firstname'];
+	$lastname = $_POST['lastname'];
+	$username = $_POST['username'];
+	$contrasenia = $_POST['password'];
+	$rol_id = $_POST['rol_id'];
+	$filename = $_FILES['photo']['name'];
 
-		$dato01 = $_POST['nombre'];
-		$dato02 = $_POST['rtn_dni'];
-
-		$dato04 = $_POST['telefono'];
-		$dato05 = $_POST['direccion'];
-		$dato06 = $_POST['email'];
+	$pass_cifrado = password_hash($contrasenia, PASSWORD_DEFAULT);
 
 
-		$sql = "INSERT INTO ".$tabla."(nombre,cedula,pais_id,telefono,direccion,correo)
-		VALUES ('$dato01','$dato02','0','$dato04','$dato05','$dato06')";
-
-		if($conn->query($sql)){ $_SESSION['success'] = ' añadido satisfactoriamente';	}
-		else{ $_SESSION['error'] = $conn->error.$sql; }
+	if (!empty($filename)) {
+		move_uploaded_file($_FILES['photo']['tmp_name'], '../../images/' . $filename);
 	}
-	else{	$_SESSION['error'] = 'Fill up add form first';	}
-	header('location: '.$modulo);
+
+
+	$sql = "INSERT INTO admin (firstname, lastname, username, password, rol_id, photo)
+	VALUES ('$firstname', '$lastname', '$username', '$pass_cifrado','$rol_id', '$filename')";
+	if($conn->query($sql)){
+
+
+		//$_SESSION['success'] = $sql;
+		$_SESSION['success'] = 'Añadido satisfactoriamente';
+	}
+	else{
+		$_SESSION['error'] = $conn->error;
+	}
+
+
+
+
+
+
+
+}
+else{
+	$_SESSION['error'] = 'Fill up add form first';
+}
+
+
+
+header('location: index.php');
 ?>

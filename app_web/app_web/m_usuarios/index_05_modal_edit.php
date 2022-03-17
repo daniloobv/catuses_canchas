@@ -2,14 +2,19 @@
     <div class="modal fade" id="edit">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span></button>
+                <form class="form-horizontal" method="POST" action="<?php echo $modulo_edit;?>">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                         <h4 class="modal-title"><b>Actualizar Informacion de: <span class="del_user_name"></span></b></h4>
                     </div>
+
                     <div class="modal-body">
-                       <form class="form-horizontal" method="POST" action="<?php echo $modulo_edit;?>">
+
                         <input type="hidden" id="userid" name="id">
+
                         <div class="form-group">
                             <label for="edit_username" class="col-sm-3 control-label">Usuario:</label>
 
@@ -88,6 +93,7 @@
                                 <input type="text" class="form-control" id="edit_firstname" name="firstname">
                             </div>
                         </div>
+
                         <div class="form-group">
                             <label for="edit_lastname" class="col-sm-3 control-label">Apellidos:</label>
 
@@ -100,8 +106,9 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Cerrar</button>
                         <button type="submit" class="btn btn-success btn-flat" name="edit"><i class="fa fa-check-square-o"></i> Actualizar</button>
-                    </form>
-                </div>
+
+                    </div>
+                </form>
             </div>
         </div>
     </div>

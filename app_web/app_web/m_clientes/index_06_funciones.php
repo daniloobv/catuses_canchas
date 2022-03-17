@@ -87,8 +87,9 @@
         $('.employee_id').html(response.nombreempleado);
         $('.del_employee_name').html(response.nombre);
         $('#edit_nombre').val(response.nombre);
-        $('#edit_rtn_dni').val(response.rtn_dni);
+        $('#edit_cedula').val(response.cedula);
         $('#edit_telefono').val(response.telefono);
+        $('#edit_correo').val(response.correo);
         $('#edit_cliente_categoria_id').val(response.cliente_categoria_id);
 
       }

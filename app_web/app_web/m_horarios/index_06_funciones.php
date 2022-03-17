@@ -76,7 +76,8 @@
 
       $('.employee_id').html(response.nombre);
       $('.del_employee_name').html(response.nombre);
-      $('#edit_mensaje').val(response.mensaje);
+      $('#edit_time_ini').val(response.hora_inicio);
+      $('#edit_time_fin').val(response.hora_final);
 
 
 

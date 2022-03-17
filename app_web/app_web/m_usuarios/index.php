@@ -1,92 +1,54 @@
-<!-- 1) incluimos en nuestra pagina al archivo de CONFIGURACION.PHP el cual se encargara de validar el acceso a cada pagina
-  tambien se encarga de brindar acceso a las variables que nos permiten interactuar con la BD -->
-  <?php include 'configuracion.php'; ?>
+<?php include '../00_includes/00_session.php'; ?>
+<?php include 'configuracion.php'; ?>
+<?php include '../00_includes/01_html_ini.php'; ?>
+<?php include '../00_includes/02_head.php'; ?>
+<?php include '../00_includes/03_body_ini.php'; ?>
 
-  <!-- 2) el archivo HEADER.PHP nos permite agegar los elementos basicos y principales de un header en HTML (plugins, librerias, etc) -->
-  <?php include '../00_includes/header1.php'; ?>
+<div class="wrapper">
 
+  <?php echo $preolader; ?>
 
-  <!--3) INICIO DEL CUERPO DE LA PAGINA HTML .... BODY -->
-  <body class="hold-transition skin-blue sidebar-mini <?php echo ' '.$fijarSidebar; ?>">
-    <div class="wrapper">
+  <?php include '../00_includes/04_menu_superior.php'; ?>
 
+  <?php include '../00_includes/05_menu_lateral_izquierdo.php'; ?>
 
-      <!--4) incluimos al archivo que contiene la estructura  y funcionalidad de la BARRA SUPERIRO por medio del archivo NAVBAR.PHP -->
-      <?php include '../00_includes/navbar.php'; ?>
-
-
-      <!--5) incluimos al archivo que contiene la estructura  y funcionalidad del MENU LATERAL IZQUIERDO por medio del archivo menubar.PHP -->
-      <?php include '../00_includes/menubar.php'; ?>
-      <!-- =============================================== -->
-
-
-      <div class="content-wrapper">
-        <!-- 6) INICIO MENSAJES DE SESION - ESTO PARA AVISAR SI LAS TRANSACCIONES HAN SIDO EXITOSA O FALLIDAS AL INTERACTUAR CON EL BACKEND  -->
-
-        <?php
-        if(isset($_SESSION['error'])){
-          echo " <div class='alert alert-danger alert-dismissible'>
-          <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-          <h4><i class='icon fa fa-warning'></i> Error!</h4>
-          ".$_SESSION['error']."
-          </div>          ";
-          unset($_SESSION['error']);
-        }
-        if(isset($_SESSION['success'])){
-          echo "
-          <div class='alert alert-success alert-dismissible'>
-          <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-          <h4><i class='icon fa fa-check'></i>¡Proceso Exitoso!</h4>
-          ".$_SESSION['success']."
-          </div>
-          ";
-          unset($_SESSION['success']);
-        }
-        ?>
-        <!-- FIN MENSAJES DE SESION - ESTO PARA AVISAR SI LAS TRANSACCIONES HAN SIDO EXITOSA O FALLIDAS AL INTERACTUAR CON EL BACKEND  -->
-
-
-        <?php include 'cinta_superior.php'; ?>
-
-
-        <section class="content connectedSortable">
-
-          <div class="row">
-
-            <div class="col-sm-12 col-12">
-
-              <!-- 7) LLAMADO AL CONTENEDOR PRIMARIO DENTRO DEL CUERPO DE LA PAGINA QUE POR LO GENERA PERO NO CASI SIEMPRE CONTIEN UNICAMENTE UNA TABLA -->
-              <?php include 'index_00_contenedor_01.php'; ?>
-
-            </div>
-
-          </div>
-
-
-
-
-        </section>
-
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <?php include '../00_includes/06_cinta_titulo_modulo.php'; ?>
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Main row -->
+        <div class="row">
+          <!-- Left col -->
+          <section class="col-lg-12 connectedSortable">
+            <?php include 'index_00_contenido_1.php'; ?>
+            <?php //include 'index_00_contenido_2.php'; ?>
+          </section>
+        </div>
       </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <?php include '../00_includes/06_footer.php'; ?>
+
+  <?php //include 'index_05_modal_send.php'; ?>
+  <?php include 'index_01_modal_add.php'; ?>
+  <?php include 'index_03_modal_edit.php'; ?>
+  <?php include 'index_05_modal_delete.php'; ?>
+  <?php include 'index_04_modal_photo_edit.php'; ?>
+
+  <?php include 'index_05_modal_edit_pass.php'; ?>
+</div>
+<!-- ./wrapper -->
+
+<?php include '../00_includes/06_script.php'; ?>
+<?php include 'index_06_funciones.php'; ?>
+<?php include '../00_includes/07_body_html_fin.php'; ?>
 
 
-      <!--8) incluimos al archivo que contiene la estructura   del PIE DE PAGINA por medio del archivo FOOTER.PHP -->
-      <?php include '../00_includes/footer.php'; ?>
-      <?php
-//$modulo="archivoB";
-      $palbraClave=$extra;
-      ?>
-      <?php include 'index_04_modal_add.php'; ?>
-      <?php include 'index_05_modal_edit.php'; ?>
-       <?php include 'index_05_modal_edit_pass.php'; ?>
-      <?php include 'index_06_modal_delete.php'; ?>
-      <?php include 'index_07_modal_edit_photo.php'; ?>
 
 
-    </div>
-    <!-- ./wrapper -->
-    <?php //include '09_script.php'; ?>
-    <?php include '../00_includes/scripts1.php'; ?>
-    <?php include 'index_02_script.php'; ?>
-  </body>
-  </html>

@@ -35,12 +35,14 @@ $modo_modulo = 0;//0=modo desarrollo, 1=modo listo para usar
 $tabla = "cliente_tipo";
 $campo0 = "Id";
 $campo1 = "Descripcion";
+$campo2 = "Descuento";
 
 
 
 //nombre de campos de la tabla
 $dato0 = "idr";
 $dato1 = "descripcion";
+$dato2 = "t_descuento";
 
 
 

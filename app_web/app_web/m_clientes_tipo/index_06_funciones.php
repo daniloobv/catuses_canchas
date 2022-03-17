@@ -87,6 +87,7 @@
         $('.employee_id').html(response.empid);
         $('.del_employee_name').html(response.descripcion);
         $('#edit_descripcion').val(response.descripcion);
+        $('#edit_t_descuento').val(response.t_descuento);
 
       }
     });

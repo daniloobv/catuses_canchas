@@ -38,7 +38,7 @@
           <!-- Add icons to the links using the .nav-icon class
            with font-awesome or any other icon font library -->
 
-           <li class="nav-item">
+    <!--        <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
@@ -71,31 +71,11 @@
                 </a>
               </li>
             </ul>
-          </li>
-
-          <li class="nav-item">
-            <a href="../m_clientes_tipo/index.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                TIPOS DE CLIENTES
-                <span class="right badge badge-success">CRUD OK</span>
-              </p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="../m_clientes/index.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                CLIENTES
-                <span class="right badge badge-success">CRUD OK</span>
-              </p>
-            </a>
-          </li>
+          </li> -->
 
           <li class="nav-item">
             <a href="../m_canchas/index.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="fa-solid fa-flag-checkered"></i>
               <p>
                 CANCHAS
                 <span class="right badge badge-success">CRUD OK</span>
@@ -103,20 +83,10 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="../m_reservaciones/index.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                RESERVACIONES
-                <span class="right badge badge-success">CRUD OK</span>
-              </p>
-            </a>
-          </li>
-
 
           <li class="nav-item">
-            <a href="../m_reservaciones/index.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="../m_horarios/index.php" class="nav-link">
+              <i class="fa-solid fa-clock"></i>
               <p>
                 HORARIOS
                 <span class="right badge badge-success">CRUD OK</span>
@@ -124,19 +94,10 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="../m_configuraciones/index.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                CONFIGURACIONES
-                <span class="right badge badge-success">CRUD OK</span>
-              </p>
-            </a>
-          </li>
 
           <li class="nav-item">
             <a href="../m_tarifas/index.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="fas fa-dollar-sign"></i>
               <p>
                 PRECIOS
                 <span class="right badge badge-success">CRUD OK</span>
@@ -144,11 +105,73 @@
             </a>
           </li>
 
+
           <li class="nav-item">
+            <a href="../m_clientes_tipo/index.php" class="nav-link">
+              <i class="fa-solid fa-user-tag"></i>
+              <p>
+                TIPOS DE CLIENTES
+                <span class="right badge badge-success">CRUD OK</span>
+              </p>
+            </a>
+          </li>
+
+
+
+
+          <li class="nav-item">
+            <a href="../m_clientes/index.php" class="nav-link">
+              <i class="fa-solid fa-user"></i>
+              <p>
+                CLIENTES
+                <span class="right badge badge-success">CRUD OK</span>
+              </p>
+            </a>
+          </li>
+
+
+
+
+
+
+
+          <li class="nav-item">
+            <a href="../m_reservaciones/index.php" class="nav-link">
+              <i class="fa-solid fa-calendar-check"></i>
+              <p>
+                RESERVACIONES
+                <span class="right badge badge-success">CRUD OK</span>
+              </p>
+            </a>
+          </li>
+
+        <!--   <li class="nav-item">
+            <a href="../m_configuraciones/index.php" class="nav-link">
+              <i class="fa-solid fa-flag-checkered"></i>
+              <p>
+                CONFIGURACIONES
+                <span class="right badge badge-success">CRUD OK</span>
+              </p>
+            </a>
+          </li> -->
+
+
+
+          <!-- <li class="nav-item">
             <a href="../m_tarifas_descuentos/index.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="fa-solid fa-flag-checkered"></i>
               <p>
                 DESCUENTOS
+                <span class="right badge badge-success">CRUD OK</span>
+              </p>
+            </a>
+          </li> -->
+
+          <li class="nav-item">
+            <a href="../m_usuarios/index.php" class="nav-link">
+              <i class="fa-solid fa-user-gear"></i>
+              <p>
+                USUARIOS
                 <span class="right badge badge-success">CRUD OK</span>
               </p>
             </a>

@@ -1,11 +1,30 @@
 <script>
 
+
   function funcionX(valor){
     //alert(valor);
     $('#modal-edit').modal('show');
     var id = valor;
     getRow(id);
   }
+
+  function funcionX_1(valor){
+    //alert(valor);
+    $('#edit2').modal('show');
+    var id = valor;
+    getRow(id);
+
+  }
+
+
+  function funcionS(valor){
+    //alert(valor);
+    $('#modal-editx').modal('show');
+    var id = valor;
+    getRow(id);
+  }
+
+
 
   function funcionA(valor){
     //alert(valor);
@@ -35,6 +54,13 @@
     getRow(id);
   });
 
+    $('.editx').click(function(e){
+      e.preventDefault();
+      $('#modal-edit2').modal('show');
+      var id = $(this).data('id');
+      getRow(id);
+    });
+
     $('.delete').click(function(e){
       e.preventDefault();
       $('#modal-delete').modal('show');
@@ -59,7 +85,6 @@
 
   function getRow(id){
     var tabla = '<?php echo $tabla; ?>';
-   // alert(tabla);
     $.ajax({
       type: 'POST',
       url: 'index_02_data.php',
@@ -67,21 +92,25 @@
       dataType: 'json',
       success: function(response){
 
-        console.log(response);
+        $('.empid').val(response.empid);//id del registro que se desea editar o eliminar
+        $('.user_id_photo').val(response.empid);
 
-      //$('.empid').val(response.empid);
+        $('.employee_id').html(response.nombreempleado);
+        $('.del_employee_name').html(response.username);
 
-      $('.empid').val(response.empid);//id del registro que se desea
-      $('.empid2').val(response.empid);//id del registro que se desea editar o eliminar
+        $('#employee_name').html(response.username);
 
-      $('.employee_id').html(response.nombre);
-      $('.del_employee_name').html(response.nombre);
-      $('#edit_mensaje').val(response.mensaje);
+        $('#edit_username').val(response.username);
+        $('#edit_firstname').val(response.firstname );
+        $('#edit_lastname').val(response.lastname);
+        $('#edit_lastname').val(response.lastname);
+
+        $('#edit_rol_id').val(response.rol_id);
 
 
 
 
-    }
-  });
+      }
+    });
   }
 </script>

@@ -11,25 +11,57 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>MENSAJE&hellip;</p>
+
           <input type="hidden" class="empid" name="id">
           <input type="hidden"               name="tabla"  value="<?php echo $tabla; ?>">
-          <div class="form-group">
-            <label for="inputDescription">CUERPO DEL MENSAJE</label>
-            <textarea id="edit_mensaje" name="mensaje" class="form-control" rows="12">  </textarea>
+          <input type="hidden"               name="modulo"  value="01index.php">
+
+          <div class="bootstrap-timepicker">
+            <div class="form-group row">
+              <label for="edit_time_ini">Hora Inicio:</label>
+              <div class="input-group date" id="timepicker11" data-target-input="nearest">
+               <div class="input-group-append" data-target="#timepicker11" data-toggle="datetimepicker">
+                <div class="input-group-text"><i class="far fa-clock"></i></div>
+              </div>
+              <input type="text" id="edit_time_ini" value="<?php echo $hora_actual ?>" name="time_ini" data-toggle="datetimepicker" class="form-control datetimepicker-input" data-target="#timepicker11"/>
+            </div>
+            <!-- /.input group -->
           </div>
-        </div>
-        <div class="modal-footer justify-content-between">
-          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-          <button type="submit" name="edit" class="btn btn-primary">GUARDAR CAMBIOS</button>
+          <!-- /.form group -->
         </div>
 
 
-      </form>
+        <div class="bootstrap-timepicker">
+          <div class="form-group row">
+            <label for="edit_time_fin">Hora Final:</label>
+            <div class="input-group date" id="timepicker12" data-target-input="nearest">
+             <div class="input-group-append" data-target="#timepicker12" data-toggle="datetimepicker">
+              <div class="input-group-text"><i class="far fa-clock"></i></div>
+            </div>
+            <input type="text" id="edit_time_fin" value="<?php echo $hora_actual ?>" name="time_fin" data-toggle="datetimepicker" class="form-control datetimepicker-input" data-target="#timepicker12"/>
+          </div>
+          <!-- /.input group -->
+        </div>
+        <!-- /.form group -->
+      </div>
+
+
+
 
     </div>
-    <!-- /.modal-content -->
-  </div>
-  <!-- /.modal-dialog -->
+
+
+    <div class="modal-footer justify-content-between">
+      <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+      <button type="submit" name="edit" class="btn btn-primary">GUARDAR CAMBIOS</button>
+    </div>
+
+
+  </form>
+
+</div>
+<!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->
 </div>
       <!-- /.modal -->

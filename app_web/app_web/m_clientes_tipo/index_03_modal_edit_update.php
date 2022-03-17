@@ -5,10 +5,10 @@
 		$empid = $_POST['id']; 		$tabla = $_POST['tabla'];			$modulo = "index.php";
 
 		$descripcion = $_POST['descripcion'];
+$t_descuento = $_POST['t_descuento'];
 
 
-
-		$sql = "UPDATE ".$tabla." SET descripcion = '$descripcion'
+		$sql = "UPDATE ".$tabla." SET descripcion = '$descripcion', t_descuento = '$t_descuento'
 		WHERE id = '$empid'";
 
 		if($conn->query($sql)){

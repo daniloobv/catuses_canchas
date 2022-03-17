@@ -16,7 +16,7 @@
   </div>
   <!-- /.card-body -->
   <div class="card-footer">
-    CANCHAS SISTEMA
+    <h3 class="card-title"><?php echo $aplicacion_modulo.' '; ?> REGISTRADOS EN LA BD</h3>
   </div>
   <!-- /.card-footer-->
 </div>

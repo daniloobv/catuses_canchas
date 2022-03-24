@@ -20,8 +20,9 @@
       <!-- /.row -->
       <!-- Main row -->
       <div class="row">
-<h1 style="align-items: justify; text-align: center;"> aqui proximanente el dashboard el cual puede contener botones de acceso directos a los modulos (a modo de propuesta)</h1>
+
         <?php //include 'index_00_contenido_1.php'; ?>
+<h3 style="text-align: center;"> aqui proximamente dashboard informativo o calendario de agendas</h3>
 
       </div>
 

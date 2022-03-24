@@ -3,15 +3,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php echo $aplicacion_nombre; ?> | <?php echo $aplicacion_modulo; ?></title>
 
-   <!-- Google Font: Source Sans Pro -->
+  <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
-   <script src="https://kit.fontawesome.com/ef98abb6c7.js" crossorigin="anonymous"></script>
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <script src="https://kit.fontawesome.com/ef98abb6c7.js" crossorigin="anonymous"></script>
+
+
   <!-- fullCalendar -->
   <link rel="stylesheet" href="../../plugins/fullcalendar/main.css">
+
+
+
+
   <!-- Tempusdominus Bootstrap 4 -->
   <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
   <!-- iCheck -->
@@ -37,7 +43,7 @@
   <link rel="stylesheet" href="../../plugins/bs-stepper/css/bs-stepper.min.css">
   <!-- dropzonejs -->
   <link rel="stylesheet" href="../../plugins/dropzone/min/dropzone.min.css">
-    <!-- Theme style -->
+  <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 
 

@@ -8,8 +8,14 @@
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+
+
     <!-- fullCalendar -->
-  <link rel="stylesheet" href="../../plugins/fullcalendar/main.css">
+  <!-- <link rel="stylesheet" href="../../plugins/fullcalendar/main.css"> -->
+  <!-- <link rel="stylesheet" href="css/fullcalendar.min.css"> -->
+
+
+
 
  <script src="https://kit.fontawesome.com/ef98abb6c7.js" crossorigin="anonymous"></script>
   <!-- Tempusdominus Bootstrap 4 -->
@@ -43,6 +49,24 @@
     <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <link rel="stylesheet" href=""> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/home.css"> -->
 
 
 

@@ -1,6 +1,20 @@
       <!-- Navbar -->
       <!-- <nav class="main-header navbar navbar-expand navbar-white navbar-light"> -->
-        <nav class="main-header navbar navbar-expand navbar-dark">
+
+
+
+<?php if( $color_systema == 0){ ?>
+    <nav class="main-header navbar navbar-expand navbar-dark">
+  <?php } ?>
+
+<?php if( $color_systema == 1){ ?>
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <?php } ?>
+  <!--  -->
+
+
+
+
           <!-- Left navbar links -->
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -129,17 +143,22 @@
             </li> -->
 
             <!-- Messages Dropdown Menu -->
-            <li class="nav-item dropdown">
+
+           <!--  <li class="nav-item dropdown">
               <a class="nav-link" style="font-size: 14px;" data-toggle="dropdown" href="#">
                 FECHA: 10-02-22
               </a>
-            </li>
+            </li> -->
+
             <!-- Notifications Dropdown Menu -->
-            <li class="nav-item dropdown">
+
+<!--             <li class="nav-item dropdown">
               <a class="nav-link" style="font-size: 14px;" data-toggle="dropdown" href="#">
                 HORA: 07:43:53 PM
               </a>
-            </li>
+            </li> -->
+
+
 
             <li class="nav-item dropdown user-menu">
               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">

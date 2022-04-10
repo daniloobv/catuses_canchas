@@ -3,6 +3,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php echo $aplicacion_nombre; ?> | <?php echo $aplicacion_modulo; ?></title>
 
+    <link rel="stylesheet" href="">
+  <link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Tempusdominus Bootstrap 4 -->
+  <!-- <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css"> -->
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/home.css"> -->
+
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Ionicons -->
@@ -12,19 +23,13 @@
   <script src="https://kit.fontawesome.com/ef98abb6c7.js" crossorigin="anonymous"></script>
 
 
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.print.css" media="print">
 
-  <!-- fullCalendar -->
-  <!-- <link rel="stylesheet" href="../../plugins/fullcalendar/main.css"> -->
-
-<link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css">
   <!-- Tempusdominus Bootstrap 4 -->
   <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
 
  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
-  <link rel="stylesheet" type="text/css" href="css/home.css">
+
 
 
 

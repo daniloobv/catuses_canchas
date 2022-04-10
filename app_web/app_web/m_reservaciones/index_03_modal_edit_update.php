@@ -1,23 +1,19 @@
 <?php
-	include '../00_includes/00_session.php';
+include '../00_includes/00_session.php';
 
-	if(isset($_POST['edit'])){
-		$empid = $_POST['id']; 		$tabla = $_POST['tabla'];			$modulo = "index.php";
+if(isset($_POST['edit'])){
 
-		$nombre = $_POST['nombre'];
-		$rtn_dni = $_POST['rtn_dni'];
+		$modulo = "index.php";
+		$id = $_POST['id'];
+		$tabla = $_POST['tabla'];
 
-        $telefono = $_POST['telefono'];
-		$direccion = $_POST['direccion'];
-		$email = $_POST['email'];
+		$hora_inicio = $_POST['time_ini'];
+		$hora_final = $_POST['time_fin'];
 
-
-		$sql = "UPDATE ".$tabla." SET nombre = '$nombre', cedula = '$rtn_dni',
-        telefono = '$telefono', direccion = '$direccion', correo = '$email'
-		WHERE id = '$empid'";
+		$sql = "UPDATE ".$tabla." SET hora_inicio = '$hora_inicio',hora_final = '$hora_final' WHERE id = '$id'";
 
 		if($conn->query($sql)){
-			$_SESSION['success'] = 'actualizado con éxito ';//.$modulo;//.$sql;
+			$_SESSION['success'] = 'actualizado con éxito ';//.$sql;
 		}
 		else{
 			$_SESSION['error'] = $conn->error;//.$sql;

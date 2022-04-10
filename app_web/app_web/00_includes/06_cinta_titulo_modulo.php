@@ -32,7 +32,7 @@
 
 
             <?php if( $btnNuevoVisible){ ?>
-             <button class="btn bg-primary btn-sm" style="margin-right: 3px;margin-left: 3px;" data-toggle="modal" data-target="#modal-add"> <!-- onclick="alert('test');"> -->
+             <button class="btn bg-primary btn-sm" style="margin-right: 3px;margin-left: 3px;" data-toggle="modal" data-target=" <?php echo $urlNuevoText ?>"> <!-- onclick="alert('test');"> -->
               <i class="fas fa-plus"></i>  <?php echo $btnNuevoText ?>
             </button>
           <?php  }
@@ -64,7 +64,9 @@
       <?php } ?>
 
 
-
+      <?php
+      include('../m_reservaciones/msjs.php');
+      ?>
 
 
     </div>
@@ -97,5 +99,7 @@ if(isset($_SESSION['success'])){
   unset($_SESSION['success']);
 }
 ?>
+
+
 
 </section>

@@ -1,5 +1,8 @@
 <?php
 $ModoConexion = 1;
+
+$color_systema = 1; //0 = NEGRO  1=BLANCO
+
 if($ModoConexion == 1 ){
 	$host = "localhost";    // sera el valor de nuestra BD
 	$basededatos = "catuses_canchas";    // sera el valor de nuestra BD
@@ -16,6 +19,4 @@ if($ModoConexion == 1 ){
      $aplicacion_modulo = "";
      $aplicacion_usuario_logeado = "USUARIO DEMO";
 }
-
-	
 ?>

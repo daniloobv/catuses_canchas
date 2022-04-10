@@ -1,8 +1,17 @@
+<script src="js/jquery-3.0.0.min.js"> </script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/fullcalendar.min.js"></script>
+<script src='locales/es.js'></script>
+
+
 
 <!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- <script src="../../plugins/jquery/jquery.min.js"></script> -->
 <!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 <!-- jQuery UI 1.11.4 -->
 <script src="../../plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- ChartJS -->
@@ -11,19 +20,13 @@
 <!-- jQuery Knob Chart -->
 <script src="../../plugins/jquery-knob/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
-<script src="../../plugins/moment/moment.min.js"></script>
-<script src="../../plugins/fullcalendar/main.js"></script>
+<!-- <script src="../../plugins/moment/moment.min.js"></script>
+<script src="../../plugins/fullcalendar/main.js"></script> -->
 <script src="../../plugins/inputmask/jquery.inputmask.min.js"></script>
 <script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
 
 
-<script src ="js/jquery-3.0.0.min.js"> </script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="js/moment.min.js"></script>
-<script type="text/javascript" src="js/fullcalendar.min.js"></script>
-<script src='locales/es.js'></script>
 
 
 
@@ -59,10 +62,12 @@
 
 
 
+
+
+
+
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button)
-</script>
+
 
 
 <script>

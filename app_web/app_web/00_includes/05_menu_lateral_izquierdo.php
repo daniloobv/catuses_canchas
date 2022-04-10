@@ -38,7 +38,7 @@
           <!-- Add icons to the links using the .nav-icon class
            with font-awesome or any other icon font library -->
 
-    <!--        <li class="nav-item">
+          <!--  <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
@@ -57,12 +57,7 @@
                 </a>
               </li>
 
-              <li class="nav-item">
-                <a href="../m_canchas/index.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>CANCHAS</p>
-                </a>
-              </li>
+
 
               <li class="nav-item">
                 <a href="../m_reservaciones/index.php" class="nav-link">
@@ -83,8 +78,36 @@
             </a>
           </li>
 
+          <li class="nav-item ">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                CONFIGURACIONES
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
 
-          <li class="nav-item">
+     <!--          <li class="nav-item">
+                <a href="../tables/simple.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Simple Tables</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>DataTables</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/jsgrid.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>jsGrid</p>
+                </a>
+              </li> -->
+
+<li class="nav-item">
             <a href="../m_horarios/index.php" class="nav-link">
               <i class="fa-solid fa-clock"></i>
               <p>
@@ -145,6 +168,16 @@
             </a>
           </li>
 
+          <li class="nav-item">
+            <a href="../m_caja/index.php" class="nav-link">
+              <i class="fa-solid fa-calendar-check"></i>
+              <p>
+                CAJA
+                <span class="right badge badge-success">CRUD OK</span>
+              </p>
+            </a>
+          </li>
+
         <!--   <li class="nav-item">
             <a href="../m_configuraciones/index.php" class="nav-link">
               <i class="fa-solid fa-flag-checkered"></i>
@@ -176,6 +209,12 @@
               </p>
             </a>
           </li>
+
+            </ul>
+          </li>
+
+
+
 
 
 

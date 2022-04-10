@@ -13,7 +13,7 @@ $aplicacion_modulo = "RESERVACIONES";
 $titulo_modulo = "RESERVACIONES";
 
 $btnRegresarVisible = false;
-$btnNuevoVisible = true;
+$btnNuevoVisible = false;
 $btnOpcion1Visible = false;
 $btnOpcion2Visible = false;
 
@@ -32,19 +32,18 @@ $urlOpcion2Text = '#';
 $modo_modulo = 0;//0=modo desarrollo, 1=modo listo para usar
 
 //titulos de la tabla
-$tabla = "reservaciones";
+$tabla="horarios";
+
 $campo0 = "Id";
-$campo1 = "Cliente";
-$campo2 = "Cancha";
-$campo3 = "Fecha";
-$campo4 = "Hora";
+$campo1 = "Hora Inicio";
+$campo2 = "Hora Final";
+//$campo3 = "fecha crea";
 
 //nombre de campos de la tabla
 $dato0 = "idr";
-$dato1 = "cliente_id";
-$dato2 = "cancha_id";
-$dato3 = "fecha";
-$dato4idar = "hora";
+$dato1 = "hora_inicio";
+$dato2 = "hora_final";
+//$dato3 = "fecha_crea";
 
 
 

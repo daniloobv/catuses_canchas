@@ -1,4 +1,7 @@
 
+
+
+
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
@@ -11,21 +14,20 @@
 <!-- jQuery Knob Chart -->
 <script src="../../plugins/jquery-knob/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
-<script src="../../plugins/moment/moment.min.js"></script>
-<script src="../../plugins/fullcalendar/main.js"></script>
+
+
 
 
 
 <script src="../../plugins/inputmask/jquery.inputmask.min.js"></script>
 <script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
 
-  <script src="https://kit.fontawesome.com/ef98abb6c7.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/ef98abb6c7.js" crossorigin="anonymous"></script>
 
 <!-- Select2 -->
 <script src="../../plugins/select2/js/select2.full.min.js"></script>
 <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+
 <!-- Summernote -->
 <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
 <!-- overlayScrollbars -->
@@ -36,6 +38,13 @@
 <!-- <script src="../../dist/js/demo.js"></script> -->
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <!-- <script src="../../dist/js/pages/dashboard.js"></script> -->
+
+<!-- fullCalendar 2.2.5 -->
+<script src="../../plugins/moment/moment.min.js"></script>
+<script src="../../plugins/fullcalendar/main.js"></script>
+
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 
 <!-- DataTables  & Plugins -->
 <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
@@ -51,7 +60,7 @@
 <script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
-<script type='text/javascript' src='locales/es.js'></script>
+
 
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
@@ -76,6 +85,31 @@
 <script>
 
   $(function () {
+
+
+
+ var url = window.location;
+
+    // for sidebar menu entirely but not cover treeview
+    $('ul.nav-sidebar a').filter(function() {
+        return this.href == url;
+    }).addClass('active');
+
+    // for treeview
+    $('ul.nav-treeview a').filter(function() {
+        return this.href == url;
+    }).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open').prev('a').addClass('active');
+
+// var url = window.location;
+// const allLinks = document.querySelectorAll('.nav-item a');
+// const currentLink = [...allLinks].filter(e => {
+//   return e.href == url;
+// });
+
+// currentLink[0].classList.add("active")
+// currentLink[0].closest(".nav-treeview").style.display="block";
+// currentLink[0].closest(".has-treeview").classList.add("active");
+
 
     $("#example1_1").DataTable({
       "responsive": true, "lengthChange": false, "autoWidth": false,"searching": false,
@@ -346,10 +380,26 @@
       });
 
              //Date picker
-             $('#reservationdate3').datetimepicker({
+      $('#reservationdate3').datetimepicker({
         //format: 'L'
         format: 'DD-MM-YYYY'
       });
+
+
+
+     //Date picker
+     $('#reservationdate1_edit').datetimepicker({
+        //format: 'L'
+        format: 'DD-MM-YYYY'
+      });
+
+             //Date picker
+      $('#reservationdate2_edit').datetimepicker({
+        //format: 'L'
+        format: 'DD-MM-YYYY'
+      });
+
+
 
     //Date and time picker
     $('#reservationdatetime').datetimepicker({ icons: { time: 'far fa-clock' } });
@@ -434,10 +484,17 @@
       $(this).bootstrapSwitch('state', $(this).prop('checked'));
     })
 
+
   })
 
-
-
 </script>
+
+
+
+
+
+
+
+
 
 

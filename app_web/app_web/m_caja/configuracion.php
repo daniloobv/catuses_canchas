@@ -36,6 +36,13 @@ $tabla = "eventoscalendar";
 $campo0 = "Id";
 $campo1 = "Evento";
 $campo1_1 = "Estado";
+
+$campo1_2 = "Precio";
+$campo1_3 = "Descue";
+$campo1_4 = "PrecioF";
+$campo1_5 = "Abonos";
+$campo1_6 = "Saldos";
+
 $campo2 = "Cliente";
 $campo3 = "Fecha Inicio";
 $campo4 = "Fecha Final";

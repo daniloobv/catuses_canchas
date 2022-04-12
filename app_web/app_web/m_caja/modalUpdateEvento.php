@@ -96,7 +96,7 @@
         <div class="form-group row">
             <label for="edit_monto" class="col-sm-2 control-label">Monto Pendiente:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="edit_monto" value="<?php echo number_format(($total_detalles+($total_detalles*0))-$total_abonos,2); ?>" readonly name="monto" required>
+                <input type="text" class="form-control" id="edit_monto"  readonly name="monto" required>
             </div>
         </div>
 

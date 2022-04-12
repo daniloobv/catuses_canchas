@@ -13,6 +13,7 @@
     $('#modal-abonar').modal('show');
     var id = valor;
     getRow(id);
+    getRow_2(id);
   }
 
 
@@ -30,6 +31,7 @@
     $('#modal-abonar').modal('show');
     var id = valor;
     getRow(id);
+    //getRow_2(id);
 
   }
 
@@ -57,10 +59,9 @@
       e.preventDefault();
       $('#modal-abonar').modal('show');
       var id = $(this).data('id');
-
     // alert(id);
-
     getRow(id);
+    getRow_2(id);
   });
 
      $('.editx').click(function(e){
@@ -82,6 +83,7 @@
       $('#modal-abonar').modal('show');
       var id = $(this).data('id');
       getRow(id);
+      getRow_2(id);
     });
 
     $('.photo').click(function(e){
@@ -109,4 +111,25 @@
       }
     });
   }
+
+
+  function getRow_2(id){
+    var tabla = '<?php echo $tabla; ?>';
+    $.ajax({
+      type: 'POST',
+      url: 'index_02_data_2.php',
+      data: {id:id,tabla:tabla},
+      dataType: 'json',
+      success: function(response){
+        $('.empid').val(response.empid);
+        $('.employee_id').html(response.empid);
+        $('.del_employee_name').html(response.nombre);
+
+        $('#edit_monto').val(response.totalAbonado);
+        $('#edit_descripcion').val(response.descripcion);
+
+      }
+    });
+  }
+
 </script>

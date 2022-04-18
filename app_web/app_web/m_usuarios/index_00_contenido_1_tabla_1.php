@@ -32,7 +32,7 @@
 
                           <button style="margin-top: 0px;margin-bottom: 05px;" class="btn btn-success btn-sm edit " data-id="<?php echo $row['empid'];  ?>" onclick = "funcionX(<?php echo $row['empid']; ?>)"><i class="fa fa-edit"></i> Editar</button>
 
-                          <button style="margin-top: 0px;margin-bottom: 05px;" class="btn btn-warning btn-sm edit2 " data-id="<?php echo $row['empid']; ?>" onclick = "funcionX_1(<?php echo $row['empid']; ?>)"><i class="fa fa-key"></i> Nueva Contraseña</button>
+                          <button style="margin-top: 0px;margin-bottom: 05px;" class="btn btn-warning btn-sm editx " data-id="<?php echo $row['empid']; ?>" onclick = "funcionX_1(<?php echo $row['empid']; ?>)"><i class="fa fa-key"></i> Nueva Contraseña</button>
 
                           <button style="margin-top: 0px;margin-bottom: 05px;" class="btn btn-danger btn-sm delete " data-id="<?php echo $row['empid']; ?>" onclick = "funcionY(<?php echo $row['empid']; ?>)"><i class="fa fa-trash"></i> Eliminar</button>
 

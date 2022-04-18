@@ -8,6 +8,7 @@
     getRow(id);
   }
 
+
   function funcionX_1(valor){
     //alert(valor);
     $('#edit2').modal('show');
@@ -15,6 +16,9 @@
     getRow(id);
 
   }
+
+
+
 
 
   function funcionS(valor){
@@ -41,6 +45,8 @@
     getRow(id);
 
   }
+
+
 
 
   function funcionZ(valor){
@@ -84,11 +90,11 @@
       getRow(id);
     });
 
-      $('.photo').click(function(e) {
-        e.preventDefault();
-        var id = $(this).data('id');
-        getRow(id);
-      });
+    $('.photo').click(function(e) {
+      e.preventDefault();
+      var id = $(this).data('id');
+      getRow(id);
+    });
 
   });
 

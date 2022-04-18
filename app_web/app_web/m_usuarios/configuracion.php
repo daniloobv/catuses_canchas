@@ -56,7 +56,7 @@ $dato6 = "id";
 
 
 //toda la data a mostrar en la tabla de registros previamente guardados
-$sql = "SELECT *, ".$tabla.".id as empid  FROM ".$tabla;
+$sql = "SELECT *, ".$tabla.".id as empid, roles.rol_descrip as rol_descripcion  FROM ".$tabla." INNER JOIN roles on roles.id = ".$tabla.".rol_id ";
 
 
 $query = $conn->query($sql);

@@ -16,28 +16,16 @@
 
                       <td><img src="<?php echo (!empty($row['photo'])) ? '../../images/' . $row['photo'] : '../../images/profile.jpg'; ?>" width="64px" height="64px">
 
-                                          <a href="#edit_photo" data-toggle="modal" class="pull-right photo" data-id="<?php echo $row['userid']; ?>">
+                        <a href="#edit_photo" data-toggle="modal" class="pull-right photo" data-id="<?php echo $row['empid']; ?>">
 
-                        <span class="fa fa-edit">
-
-                        </span>
-
-                    </a>
-
-
+                          <span class="fa fa-edit">
+                          </span>
+                        </a>
                       </td>
 
-
                       <td><?php echo $row['username']; ?></td>
-
-                      <td><?php echo $row['id']; ?></td>
+                      <td><?php echo $row['rol_descripcion']; ?></td>
                       <td><?php echo $row['firstname'].' '.$row['lastname']; ?></td>
-
-
-
-
-
-
                       <td>
 
                         <div  class="btn-group-vertical">

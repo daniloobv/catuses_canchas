@@ -102,10 +102,13 @@
       success: function(response){
 
         $('.empid').val(response.empid);//id del registro que se desea editar o eliminar
+        $('.empid_2').val(response.empid);//id del registro que se desea editar o eliminar
         $('.user_id_photo').val(response.empid);
 
         $('.employee_id').html(response.nombreempleado);
         $('.del_employee_name').html(response.username);
+
+
 
         $('#employee_name').html(response.username);
 

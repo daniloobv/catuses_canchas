@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 14-04-2022 a las 18:36:18
+-- Tiempo de generación: 18-04-2022 a las 03:01:46
 -- Versión del servidor: 10.3.30-MariaDB-cll-lve
 -- Versión de PHP: 7.3.33
 
@@ -251,6 +251,28 @@ INSERT INTO `eventoscalendar` (`id`, `evento`, `color_evento`, `fecha_inicio`, `
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `forma_pago`
+--
+
+CREATE TABLE `forma_pago` (
+  `id` int(11) NOT NULL,
+  `descripcion` varchar(255) NOT NULL,
+  `estado_registro` int(11) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `forma_pago`
+--
+
+INSERT INTO `forma_pago` (`id`, `descripcion`, `estado_registro`) VALUES
+(1, 'EFECTIVO', 1),
+(2, 'TRANSFERNCIA', 1),
+(3, 'TARJETA', 1),
+(4, 'MIXTO', 1);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `horarios`
 --
 
@@ -357,6 +379,12 @@ ALTER TABLE `eventoscalendar`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `forma_pago`
+--
+ALTER TABLE `forma_pago`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `horarios`
 --
 ALTER TABLE `horarios`
@@ -413,6 +441,12 @@ ALTER TABLE `cuentas_abonos`
 --
 ALTER TABLE `eventoscalendar`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+
+--
+-- AUTO_INCREMENT de la tabla `forma_pago`
+--
+ALTER TABLE `forma_pago`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `horarios`

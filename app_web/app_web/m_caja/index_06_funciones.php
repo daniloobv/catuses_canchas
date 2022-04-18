@@ -17,7 +17,7 @@
   }
 
 
-    function funcionS(valor){
+  function funcionS(valor){
     //alert(valor);
     $('#modal-editx').modal('show');
     var id = valor;
@@ -31,6 +31,16 @@
     $('#modal-abonar').modal('show');
     var id = valor;
     getRow(id);
+    //getRow_2(id);
+
+  }
+
+  function funcion_pagar(valor){
+    //alert(valor);
+    $('#modal-pagar').modal('show');
+    var id = valor;
+    getRow(id);
+    getRow_2(id);
     //getRow_2(id);
 
   }
@@ -64,7 +74,7 @@
     getRow_2(id);
   });
 
-     $('.editx').click(function(e){
+    $('.editx').click(function(e){
       e.preventDefault();
       $('#modal-edit2').modal('show');
       var id = $(this).data('id');
@@ -81,6 +91,14 @@
     $('.abonar').click(function(e){
       e.preventDefault();
       $('#modal-abonar').modal('show');
+      var id = $(this).data('id');
+      getRow(id);
+      getRow_2(id);
+    });
+
+    $('.pagar').click(function(e){
+      e.preventDefault();
+      $('#modal-pagar').modal('show');
       var id = $(this).data('id');
       getRow(id);
       getRow_2(id);
@@ -104,9 +122,21 @@
       success: function(response){
         $('.empid').val(response.empid);
         $('.employee_id').html(response.empid);
-        $('.del_employee_name').html(response.nombre);
-        $('#edit_nombre').val(response.nombre);
+
+
+        const formatter = new Intl.NumberFormat('en-US', {
+          //style: 'currency',
+          //currency: 'USD',
+          minimumFractionDigits: 2
+        })
+        let num = response.subTotalx - response.totalAbonado;
+        $('#edit_monto').val(formatter.format(num));
+        $('#edit_monto_p').val(formatter.format(num));
+        $('#edit_monto_a').val(formatter.format(num));
+        //$('#edit_monto').val(formatter.format(num));
         $('#edit_descripcion').val(response.descripcion);
+
+
 
       }
     });
@@ -121,11 +151,17 @@
       data: {id:id,tabla:tabla},
       dataType: 'json',
       success: function(response){
-        $('.empid').val(response.empid);
-        $('.employee_id').html(response.empid);
-        $('.del_employee_name').html(response.nombre);
 
-        $('#edit_monto').val(response.totalAbonado);
+        const formatter = new Intl.NumberFormat('en-US', {
+        //style: 'currency',
+        //currency: 'USD',
+        minimumFractionDigits: 2
+        })
+        let num = response.subTotalx - response.totalAbonado;
+        $('#edit_monto').val(formatter.format(num));
+        $('#edit_monto_p').val(formatter.format(num));
+        $('#edit_monto_a').val(formatter.format(num));
+        //$('#edit_monto').val(formatter.format(num));
         $('#edit_descripcion').val(response.descripcion);
 
       }

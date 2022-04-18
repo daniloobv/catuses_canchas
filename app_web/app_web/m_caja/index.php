@@ -20,6 +20,9 @@
   <section class="content">
     <div class="container-fluid">
       <!-- Main row -->
+
+<?php include '../00_includes/01_alertas.php'; ?>
+
       <div class="row">
       <!-- Left col -->
       <section class="col-lg-12 connectedSortable">

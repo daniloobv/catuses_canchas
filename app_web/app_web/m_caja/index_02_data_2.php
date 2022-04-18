@@ -9,6 +9,7 @@
 
 		$sql = "SELECT
                        cuentas.id as cuenta_idx,
+                       cuentas.sub_total as subTotalx,
                        IfNull(sum(cuentas_abonos.monto),0) as totalAbonado
                        FROM
                        eventoscalendar

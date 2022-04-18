@@ -20,31 +20,7 @@
                   <tbody>
                     <?php  while($row = $query->fetch_assoc()){  ?>
                       <tr>
-                        <td><?php echo $row[$dato0]; ?></td>
-                        <td><?php echo $row[$dato1]; ?></td>
 
-                        <?php
-
-                        if($row[$dato1_1]==1){
-                         $status = '<span class="badge badge-danger">SIN PAGAR</span>' ;
-                       }
-
-                       if($row[$dato1_1]==2){
-                         $status = '<span class="badge badge-warning">ABONOS</span>' ;
-                       }
-
-                       if($row[$dato1_1]==3){
-                         $status = '<span class="badge badge-success">PAGADO</span>' ;
-                       }
-                       ?>
-
-                       <td><?php echo $status; ?></td>
-
-
-
-                       <td><?php echo $row[$dato2]; //CLIENTE ?></td>
-                       <td><?php echo $row[$dato3]; //FECHA INICIAL ?></td>
-                       <td><?php echo $row[$dato3]; //FECHA FINAL ?></td>
 
                        <?php
 
@@ -72,6 +48,39 @@
                        $abono=$RESPUESTA2['totalAbonado'];
 
                        ?>
+
+
+
+                       <td><?php echo $row[$dato0]; ?></td>
+                       <td><?php echo $row[$dato1]; ?></td>
+
+                       <?php
+
+                       // if($row[$dato1_1]==1){
+                       //   $status = '<span class="badge badge-danger">SIN PAGAR</span>' ;
+                       // }
+
+                       // if($row[$dato1_1]==2){
+                       //   $status = '<span class="badge badge-warning">ABONOS</span>' ;
+                       // }
+
+
+
+                       if($abono==0 && ($sub_total == $abono ) ){
+                         $status = '<span class="badge badge-success">PAGADO</span>' ;
+                       }
+                       ?>
+
+                       <td><?php echo $status; ?></td>
+
+
+
+                       <td><?php echo $row[$dato2]; //CLIENTE ?></td>
+                       <td><?php echo $row[$dato3]; //FECHA INICIAL ?></td>
+                       <td><?php echo $row[$dato3]; //FECHA FINAL ?></td>
+
+
+
                        <td><?php echo number_format($precio,2); ?></td>
                        <td><?php echo number_format($descuento,2); ?></td>
                        <td><?php echo number_format($sub_total,2); ?></td>

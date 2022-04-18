@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 18-04-2022 a las 03:01:46
+-- Tiempo de generación: 18-04-2022 a las 03:59:08
 -- Versión del servidor: 10.3.30-MariaDB-cll-lve
 -- Versión de PHP: 7.3.33
 
@@ -168,18 +168,22 @@ CREATE TABLE `cuentas_abonos` (
   `cuenta_id` int(11) NOT NULL,
   `fecha` timestamp NOT NULL DEFAULT current_timestamp(),
   `monto` decimal(10,2) NOT NULL,
-  `user_id` int(11) NOT NULL
+  `user_id` int(11) NOT NULL,
+  `tipo_pago_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `cuentas_abonos`
 --
 
-INSERT INTO `cuentas_abonos` (`id`, `cuenta_id`, `fecha`, `monto`, `user_id`) VALUES
-(1, 6, '2022-04-11 22:29:22', 6.00, 1),
-(2, 6, '2022-04-11 22:29:22', 4.00, 1),
-(3, 7, '2022-04-11 22:33:47', 350.00, 1),
-(4, 7, '2022-04-11 22:33:47', 650.00, 1);
+INSERT INTO `cuentas_abonos` (`id`, `cuenta_id`, `fecha`, `monto`, `user_id`, `tipo_pago_id`) VALUES
+(1, 6, '2022-04-11 22:29:22', 6.00, 1, 1),
+(2, 6, '2022-04-11 22:29:22', 4.00, 1, 1),
+(3, 7, '2022-04-11 22:33:47', 350.00, 1, 1),
+(4, 7, '2022-04-11 22:33:47', 650.00, 1, 1),
+(14, 6, '2022-04-18 10:48:47', 940.00, 1, 2),
+(15, 6, '2022-04-18 10:51:29', 3000.00, 1, 2),
+(16, 6, '2022-04-18 10:52:13', 12000.00, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -434,7 +438,7 @@ ALTER TABLE `cuentas`
 -- AUTO_INCREMENT de la tabla `cuentas_abonos`
 --
 ALTER TABLE `cuentas_abonos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de la tabla `eventoscalendar`

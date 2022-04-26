@@ -7,7 +7,7 @@
 
     <?php
     date_default_timezone_set("America/Managua");
-    $page_name = "PAGINA INICIO PROYECTO";
+    $page_name = "intenta_mi_idea";
     ?>
     <title><?php echo $page_name  ?></title>
 
@@ -81,7 +81,7 @@ else{
 <header class="main-header">
     <div class="container container--flex">
         <div class="logo-container columnn column--50">
-            <h1 class="logo"><strong>NOMBRE DEL SISTEMA O PROYECTO</strong></h1>
+            <h1 class="logo"><strong>Danilo Oswaldo Berroteran Vivas</strong></h1>
         </div>
         <div class="main-header__contactInfo column column--50">
             <p class="main-header__contactInfo__phone">

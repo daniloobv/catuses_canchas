@@ -2,7 +2,7 @@
 <?php
   session_start();
   if(isset($_SESSION['admin'])){
-    header('location: /app_web/m_canchas/index.php');
+    header('location: ../canchas/app_web/m_canchas/index.php');
   }
 
 

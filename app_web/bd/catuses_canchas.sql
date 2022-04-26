@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 18-04-2022 a las 03:59:08
+-- Tiempo de generación: 20-04-2022 a las 11:45:40
 -- Versión del servidor: 10.3.30-MariaDB-cll-lve
 -- Versión de PHP: 7.3.33
 
@@ -48,8 +48,9 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`id`, `username`, `password`, `firstname`, `lastname`, `photo`, `created_on`, `rol_id`, `empresa_id`, `sucursal_id`, `sueldo`) VALUES
 (1, 'admin', '$2y$10$G7OLz39qFMjGwFTn9ixG3.ablT1zxmIMzvtLhW0d3sKT4EEBsurx2', 'Administrador', 'Demostracion', 'FB_IMG_1564510597587.jpg', '2019-12-18 07:00:00', 1, 1, 1, NULL),
-(2, 'admin', '$2y$10$9B0rP8Uq4MEAkrgw2QckRuMrIl.pyRgY9ec86duffijloSIVY9ZEK', '', '', '', '2022-03-17 13:57:26', 1, NULL, NULL, NULL),
-(30, 'lapto2006', '$2y$10$zuNlYsDlN.MTPsJF4zLHA.z6AJ47halcZ3yvQVFYu8WC6G0DXKQ0u', 'Danilo', 'B. Vivas', 'dobvp1.jpg', '2021-11-08 07:00:00', 2, 1, 1, NULL);
+(2, 'admin', '$2y$10$9B0rP8Uq4MEAkrgw2QckRuMrIl.pyRgY9ec86duffijloSIVY9ZEK', 'usuario', 'prueba', 'compras.jpg', '2022-03-17 13:57:26', 1, NULL, NULL, NULL),
+(3, 'cajero', '$2y$10$dMZIr0O3JapzG8OSoLpXq.pv.YZU05DhAbJTXss/RzkDazSPlfw6e', 'Andres', 'Santander', 'icono catuses.png', '2022-04-18 11:15:13', 2, NULL, NULL, NULL),
+(4, 'lapto2006', '$2y$10$zuNlYsDlN.MTPsJF4zLHA.z6AJ47halcZ3yvQVFYu8WC6G0DXKQ0u', 'Danilo', 'B. Vivas', 'dobvp1.jpg', '2021-11-08 07:00:00', 2, 1, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -155,7 +156,8 @@ CREATE TABLE `cuentas` (
 
 INSERT INTO `cuentas` (`id`, `cliente_id`, `fecha`, `user_id`, `precio`, `descuento`, `sub_total`, `eventoscalendar_id`) VALUES
 (6, 61, '2022-04-11 21:15:06', 1, 16000.00, 50.00, 15950.00, 73),
-(7, 60, '2022-04-11 22:30:30', 1, 16000.00, 0.00, 16000.00, 74);
+(7, 60, '2022-04-11 22:30:30', 1, 16000.00, 0.00, 16000.00, 74),
+(8, 62, '2022-04-18 11:08:33', 1, 16000.00, 50.00, 15950.00, 75);
 
 -- --------------------------------------------------------
 
@@ -250,7 +252,8 @@ CREATE TABLE `eventoscalendar` (
 
 INSERT INTO `eventoscalendar` (`id`, `evento`, `color_evento`, `fecha_inicio`, `fecha_fin`, `cliente_id`, `user_id`, `cancha_id`, `precio`, `descuento`, `horario_id`, `estado_pago`, `estado_fecha_agenda`) VALUES
 (73, 'ALQUILER ', '#2196F3', '2022-04-11', '2022-04-12', 61, 0, 2, 16000.00, 50.00, 6, 1, 1),
-(74, 'ALQUILER ', '#FFC107', '2022-04-11', '2022-04-12', 60, 0, 1, 16000.00, 0.00, 1, 1, 1);
+(74, 'ALQUILER ', '#FFC107', '2022-04-11', '2022-04-12', 60, 0, 1, 16000.00, 0.00, 1, 1, 1),
+(75, 'ALQUILER ', '#FF5722', '2022-04-18', '2022-04-19', 62, 0, 3, 16000.00, 50.00, 6, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -411,6 +414,12 @@ ALTER TABLE `tarifa`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT de la tabla `canchas`
 --
 ALTER TABLE `canchas`
@@ -432,7 +441,7 @@ ALTER TABLE `cliente_tipo`
 -- AUTO_INCREMENT de la tabla `cuentas`
 --
 ALTER TABLE `cuentas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `cuentas_abonos`
@@ -444,7 +453,7 @@ ALTER TABLE `cuentas_abonos`
 -- AUTO_INCREMENT de la tabla `eventoscalendar`
 --
 ALTER TABLE `eventoscalendar`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT de la tabla `forma_pago`

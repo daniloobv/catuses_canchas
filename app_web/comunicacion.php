@@ -9,7 +9,7 @@ if($ModoConexion == 1 ){
 	$conn = new mysqli($host,$usuariodb,$clavedb,$basededatos);
 	mysqli_set_charset($conn, "utf8");
 	if ($conn->connect_errno) {
-	    echo "Nuestro sitio experimenta fallos....1123";
+	    echo "Nuestro sitio experimenta fallos....1";
 	    exit();
 	}
 }

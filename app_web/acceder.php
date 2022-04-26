@@ -2,7 +2,7 @@
 <?php
   session_start();
   if(isset($_SESSION['admin'])){
-    header('location: /canchas/app_web/m_canchas/index.php');
+    header('location: /app_web/m_canchas/index.php');
   }
 
 
@@ -20,7 +20,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?php echo $var0 ?> | INICIO </title>
+  <title>CANCHAS | INICIO </title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -38,12 +38,12 @@
   <!-- <div class="login-box"> -->
   <div class="login-logo">
    <!--  <a href="index2.html"><b><?php //echo $var1 ?></b><?php //echo $var2 ?></a> -->
-    <a href="https://catuses.com/canchas"><b><?php echo "SISTEMA RESERVACIONES CANCHAS" ?></a>
+   <h4>  <a href="https://catuses.com/canchas"><b><?php echo "SISTEMA RESERVACIONES CANCHAS" ?></a> </h4>
   </div>
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Ingrese sus credenciales</p>
+      <p class="login-box-msg">INGRESE SUS CREDENCIALES</p>
 
 
 <!-- ESCTRUCRA DEL FORMULARIO QUE ENVIARA LOS DATOS A VALIDAR EL ACCESO -->

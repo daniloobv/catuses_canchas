@@ -1,5 +1,4 @@
 <?php include 'comunicacion.php'; ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,7 +6,7 @@
 
     <?php
     date_default_timezone_set("America/Managua");
-    $page_name = "intenta_mi_idea";
+    $page_name = "PROYECTO";
     ?>
     <title><?php echo $page_name  ?></title>
 
@@ -19,6 +18,13 @@
     <link rel="stylesheet" href="css/galeria.css">
 
     <link href="https://file.myfontastic.com/7TDVGZ4jsm9MxKcNuXbiVR/icons.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
 
 
 
@@ -54,26 +60,26 @@ logged_out_greeting="saludos estimado tambien podemos comunicarnos por WhatsApp 
 
 <?php
 if(! empty($_SERVER['REMOTE_ADDR']) ){
-   $ip = $_SERVER['REMOTE_ADDR'];
+ $ip = $_SERVER['REMOTE_ADDR'];
 }
 else{
-   $ip = empty($_SERVER['HTTP_X_FORWARDED_FOR']) ? '' : $_SERVER['HTTP_X_FORWARDED_FOR'];
+ $ip = empty($_SERVER['HTTP_X_FORWARDED_FOR']) ? '' : $_SERVER['HTTP_X_FORWARDED_FOR'];
 }
 
-// $fecha = date('Y-m-d');
-// $sqlx = "SELECT * FROM visitas where ip = '$ip'";
-// $queryx = $conn->query($sqlx);
-// $prowx = $queryx->fetch_assoc();
-// if( $prowx['ip'] == $ip && $prowx['access'] == $hoy){
-// }
-// else
-// {
-//     $sql = "INSERT INTO visitas(ip) VALUES ('$ip')";
-//     if($conn->query($sql)){
-//     }
-//     else{
-//     }
-// }
+$fecha = date('Y-m-d');
+$sqlx = "SELECT * FROM visitas where ip = '$ip'";
+$queryx = $conn->query($sqlx);
+$prowx = $queryx->fetch_assoc();
+if( $prowx['ip'] == $ip && $prowx['access'] == $hoy){
+}
+else
+{
+    $sql = "INSERT INTO visitas(ip) VALUES ('$ip')";
+    if($conn->query($sql)){
+    }
+    else{
+    }
+}
 ?>
 
 
@@ -81,7 +87,7 @@ else{
 <header class="main-header">
     <div class="container container--flex">
         <div class="logo-container columnn column--50">
-            <h1 class="logo"><strong>Danilo Oswaldo Berroteran Vivas</strong></h1>
+            <h1 class="logo"><strong>NOMBRE DE TU NEGOCIO</strong></h1>
         </div>
         <div class="main-header__contactInfo column column--50">
             <p class="main-header__contactInfo__phone">

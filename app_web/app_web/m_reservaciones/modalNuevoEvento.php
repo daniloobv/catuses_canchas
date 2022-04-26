@@ -24,8 +24,117 @@
           </div>
         </div>
 
-        <script>
-          $(function(){
+
+        <div class="form-group row">
+          <label for="cliente_id" class="col-sm-3 control-label">CLIENTE:</label>
+          <div class="col-sm-9">
+            <select class="form-control select2" name="cliente_id" id="cliente_id" required>
+              <option value="" selected>- Seleccionar -</option>
+              <?php
+              $sql = "SELECT * FROM client";
+              $query = $conn->query($sql);
+              while ($prow = $query->fetch_assoc()) {
+                echo "
+                <option value='" . $prow['id'] . "'>" . $prow['nombre'] . "</option>
+                ";
+              }
+              ?>
+            </select>
+          </div>
+        </div>
+
+        <!-- <input id="myInput"> -->
+
+        <div class="form-group row">
+          <label for="cancha_id" class="col-sm-3 control-label">CANCHA:</label>
+          <div class="col-sm-9">
+            <select class="form-control select2" name="cancha_id" id="cancha_id" required>
+              <option value="" selected>- Seleccionar -</option>
+              <?php
+              $sql = "SELECT * FROM canchas";
+              $query = $conn->query($sql);
+              while ($prow = $query->fetch_assoc()) {
+                echo "
+                <option value='" . $prow['id'] . "'>" . $prow['nombre'] . "</option>
+                ";
+              }
+              ?>
+            </select>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="form-group row">
+          <label for="horario_id" class="col-sm-3 control-label">HORARIO:</label>
+          <div class="col-sm-9">
+            <select class="form-control select2" name="horario_id" id="horario_id" required>
+              <option value="" selected>- Seleccionar -</option>
+              <?php
+              $sql = "SELECT * FROM horarios";
+              $query = $conn->query($sql);
+              while ($prow = $query->fetch_assoc()) {
+                echo "
+                <option value='" . $prow['id'] . "'>" . $prow['hora_inicio'] . ' - ' . $prow['hora_final'] . "</option>
+                ";
+              }
+              ?>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="grupoRadio" class="col-sm-3 control-label">COLOR EVENTO:</label>
+          <div class="col-sm-9" id="grupoRadio">
+
+            <input type="radio" name="color_evento" id="orange" value="#FF5722" checked>
+            <label for="orange" class="circu" style="background-color: #FF5722;"> </label>
+
+            <input type="radio" name="color_evento" id="amber" value="#FFC107">
+            <label for="amber" class="circu" style="background-color: #FFC107;"> </label>
+
+            <input type="radio" name="color_evento" id="lime" value="#8BC34A">
+            <label for="lime" class="circu" style="background-color: #8BC34A;"> </label>
+
+            <input type="radio" name="color_evento" id="teal" value="#009688">
+            <label for="teal" class="circu" style="background-color: #009688;"> </label>
+
+            <input type="radio" name="color_evento" id="blue" value="#2196F3">
+            <label for="blue" class="circu" style="background-color: #2196F3;"> </label>
+
+            <input type="radio" name="color_evento" id="indigo" value="#9c27b0">
+            <label for="indigo" class="circu" style="background-color: #9c27b0;"> </label>
+
+          </div>
+        </div>
+
+        <div class="form-group row">
+         <label for="precio" class="col-sm-3 control-label">PRECIO REGULAR</label>
+         <div class="col-sm-9">
+          <input type="text" class="form-control" name="precio" readonly id="precio" placeholder="PRECIO" required/>
+        </div>
+      </div>
+
+      <div class="form-group row">
+       <label for="descuento" class="col-sm-3 control-label">DESCUENTO</label>
+       <div class="col-sm-9">
+        <input type="text" class="form-control" name="descuento" readonly id="descuento" placeholder="DESCUENTO" required/>
+      </div>
+    </div>
+
+    <div class="form-group row">
+     <label for="neto_a_pagar" class="col-sm-3 control-label">TOTAL A PAGAR</label>
+     <div class="col-sm-9">
+      <input type="text" class="form-control" name="neto_a_pagar" readonly id="neto_a_pagar" placeholder="TOTAL A PAGAR" required/>
+    </div>
+  </div>
+
+
+  <script>
+    $(function(){
           $(document).on('change','#cliente_id',function(){ //detectamos el evento change
           var value = $(this).val();//sacamos el valor del select
           getRow(value);
@@ -47,10 +156,10 @@
 
 
 
-});
+      });
 
-          function getRow(id){
-            var tabla = 'client';
+    function getRow(id){
+      var tabla = 'client';
              // alert(tabla);
              $.ajax({
               type: 'POST',
@@ -93,137 +202,31 @@
             if (isNaN(b)) {
               b=0;
             }
-console.log('valor obtenido en A: '+ a);
-console.log('valor obtenido en B: '+ b);
+            console.log('valor obtenido en A: '+ a);
+            console.log('valor obtenido en B: '+ b);
 
             //var c = a+b;
             //SUBTOTAL---C
             var c = parseFloat(a-b);
             //console.log('subtotal: '+c);
             document.formEvento.neto_a_pagar.value = c.toFixed(2);
-}
+          }
 
-</script>
-
-<div class="form-group row">
-  <label for="cliente_id" class="col-sm-3 control-label">CLIENTE:</label>
-  <div class="col-sm-9">
-    <select class="form-control select2" name="cliente_id" id="cliente_id" required>
-      <option value="" selected>- Seleccionar -</option>
-      <?php
-      $sql = "SELECT * FROM client";
-      $query = $conn->query($sql);
-      while ($prow = $query->fetch_assoc()) {
-        echo "
-        <option value='" . $prow['id'] . "'>" . $prow['nombre'] . "</option>
-        ";
-      }
-      ?>
-    </select>
-  </div>
-</div>
-
-<!-- <input id="myInput"> -->
-
-<div class="form-group row">
-  <label for="cancha_id" class="col-sm-3 control-label">CANCHA:</label>
-  <div class="col-sm-9">
-    <select class="form-control select2" name="cancha_id" id="cancha_id" required>
-      <option value="" selected>- Seleccionar -</option>
-      <?php
-      $sql = "SELECT * FROM canchas";
-      $query = $conn->query($sql);
-      while ($prow = $query->fetch_assoc()) {
-        echo "
-        <option value='" . $prow['id'] . "'>" . $prow['nombre'] . "</option>
-        ";
-      }
-      ?>
-    </select>
-  </div>
-</div>
+        </script>
 
 
 
 
 
 
-<div class="form-group row">
-  <label for="horario_id" class="col-sm-3 control-label">HORARIO:</label>
-  <div class="col-sm-9">
-    <select class="form-control select2" name="horario_id" id="horario_id" required>
-      <option value="" selected>- Seleccionar -</option>
-      <?php
-      $sql = "SELECT * FROM horarios";
-      $query = $conn->query($sql);
-      while ($prow = $query->fetch_assoc()) {
-        echo "
-        <option value='" . $prow['id'] . "'>" . $prow['hora_inicio'] . ' - ' . $prow['hora_final'] . "</option>
-        ";
-      }
-      ?>
-    </select>
-  </div>
-</div>
+      </div>
 
-<div class="form-group row">
-  <label for="grupoRadio" class="col-sm-3 control-label">COLOR EVENTO:</label>
-  <div class="col-sm-9" id="grupoRadio">
+      <div class="modal-footer">
+       <button type="submit" class="btn btn-success">Guardar RESERVA</button>
+       <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+     </div>
+   </form>
 
-    <input type="radio" name="color_evento" id="orange" value="#FF5722" checked>
-    <label for="orange" class="circu" style="background-color: #FF5722;"> </label>
-
-    <input type="radio" name="color_evento" id="amber" value="#FFC107">
-    <label for="amber" class="circu" style="background-color: #FFC107;"> </label>
-
-    <input type="radio" name="color_evento" id="lime" value="#8BC34A">
-    <label for="lime" class="circu" style="background-color: #8BC34A;"> </label>
-
-    <input type="radio" name="color_evento" id="teal" value="#009688">
-    <label for="teal" class="circu" style="background-color: #009688;"> </label>
-
-    <input type="radio" name="color_evento" id="blue" value="#2196F3">
-    <label for="blue" class="circu" style="background-color: #2196F3;"> </label>
-
-    <input type="radio" name="color_evento" id="indigo" value="#9c27b0">
-    <label for="indigo" class="circu" style="background-color: #9c27b0;"> </label>
-
-  </div>
-</div>
-
-<div class="form-group row">
- <label for="precio" class="col-sm-3 control-label">PRECIO REGULAR</label>
- <div class="col-sm-9">
-  <input type="text" class="form-control" name="precio" readonly id="precio" placeholder="Nombre del Evento" required/>
-</div>
-</div>
-
-<div class="form-group row">
- <label for="descuento" class="col-sm-3 control-label">DESCUENTO</label>
- <div class="col-sm-9">
-  <input type="text" class="form-control" name="descuento" readonly id="descuento" placeholder="Nombre del Evento" required/>
-</div>
-</div>
-
-<div class="form-group row">
- <label for="neto_a_pagar" class="col-sm-3 control-label">TOTAL A PAGAR</label>
- <div class="col-sm-9">
-  <input type="text" class="form-control" name="neto_a_pagar" readonly id="neto_a_pagar" placeholder="Nombre del Evento" required/>
-</div>
-</div>
-
-
-
-
-
-</div>
-
-<div class="modal-footer">
- <button type="submit" class="btn btn-success">Guardar RESERVA</button>
- <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
-</div>
-</form>
-
-</div>
+ </div>
 </div>
 </div>

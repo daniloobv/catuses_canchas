@@ -12,7 +12,7 @@ if($ModoConexion == 1 ){
 	$conn = new mysqli($host,$usuariodb,$clavedb,$basededatos);
 	mysqli_set_charset($conn, "utf8");
 	if ($conn->connect_errno) {
-	    echo "Nuestro sitio experimenta fallos...TEST_INICIAL";
+	    echo "conexion timeout";
 	    exit();
 	}
 	 $aplicacion_nombre = "SISTEMA CANCHAS";

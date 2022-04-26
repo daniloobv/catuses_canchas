@@ -223,7 +223,7 @@
         <div class="form-group row">
          <label for="precio" class="col-sm-3 control-label">PRECIO REGULAR</label>
          <div class="col-sm-9">
-          <input type="text" class="form-control" name="precio" readonly id="precio" placeholder="Nombre del Evento" required/>
+          <input type="text" class="form-control" name="precio" readonly id="precio" placeholder="precio" required/>
         </div>
       </div>
 
